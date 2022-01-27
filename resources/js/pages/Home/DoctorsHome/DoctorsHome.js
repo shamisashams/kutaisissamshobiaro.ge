@@ -5,7 +5,7 @@ import { Title1 } from "../../../components/Titles/Titles";
 import "./DoctorsHome.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import  { Link } from "@inertiajs/inertia-react"
 const DoctorsHome = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -47,7 +47,10 @@ const DoctorsHome = () => {
             );
           })}
         </div>
-        <MainBtn text="ნახე სრულად" />
+          <Link href={route('client.doctors.index')}>
+              <MainBtn text="ნახე სრულად" />
+
+          </Link>
       </div>
     </div>
   );

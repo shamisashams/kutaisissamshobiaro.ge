@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Inertia\Middleware;
 use Spatie\TranslationLoader\TranslationLoaders\Db;
@@ -45,14 +46,16 @@ class HandleInertiaRequests extends Middleware
         $this->settings();
         $locales = config("translatable.locales");
         $currentLocale = App::getLocale();
-//        dd($trans->loadTranslations("ge", "client"));
+        $currentRoute = url()->current();
+//        dd(url()->current());
 //        dd(app()->getLocale());
 //        dd(config("translatable.locales"));
 
         return array_merge(parent::share($request), [
             "translations" => $trans->loadTranslations("ge", "client"),
             "locales" => $locales,
-            "currentLocale" => $currentLocale
+            "currentLocale" => $currentLocale,
+            "pathname" => $currentRoute
         ]);
     }
 

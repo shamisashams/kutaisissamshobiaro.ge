@@ -10,6 +10,7 @@ use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Slider;
+use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 class HomeController extends Controller
@@ -31,7 +32,7 @@ class HomeController extends Controller
         $news = News::where("status", 1)->with(['file', 'translations'])->take(6)->get();
 
 //        dd($sliders->get()[0]->file->file_url);
-
+//        dd(Route::currentRouteName());
 
         $products = $products->where('status', true);
         return Inertia::render('Home/Home', ["sliders" => $sliders->get(), "news" => $news, "services" => $services]);

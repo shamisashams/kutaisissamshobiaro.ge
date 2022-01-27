@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
+import { Inertia } from '@inertiajs/inertia'
+
 import {
   Call,
   Mail,
@@ -10,8 +12,10 @@ import { PageHead } from "../../components/PageHead/PageHead";
 import { Title2 } from "../../components/Titles/Titles";
 import "./Contact.css";
 import Layout from "../../Layouts/Layout";
+import {usePage} from "@inertiajs/inertia-react";
 
 const Contact = () => {
+    const { errors } = usePage().props
   const contactInfo = [
     {
       icon: <Call color="#1DBFCC" />,
@@ -29,6 +33,28 @@ const Contact = () => {
       info: "ქუთაისი, ლორთქიფანიძის ქუჩა №13",
     },
   ];
+
+    const [values, setValues] = useState({
+        name: "",
+        phone: "",
+        mail: "",
+        message: "",
+    })
+
+    function handleChange(e) {
+        const key = e.target.id;
+        const value = e.target.value;
+        setValues(values => ({
+            ...values,
+            [key]: value,
+        }))
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        console.log(values);
+        Inertia.post(route('client.contact.mail'), values)
+    }
   return (
       <Layout>
           <div className="contactPage">
@@ -38,18 +64,22 @@ const Contact = () => {
                       <Map />
                   </div>
                   <div className="flex content">
-                      <div className="left">
+                      <form onSubmit={handleSubmit} className="left">
                           <Title2 text="თუ გაქვთ კითხვები მოგვწერეთ" />
                           <p>
                               დეველოპერის ან დიზაინერის ყოველდღიურ საქმიანობაში ხშირად არის
                               ხოლმე საჭირო ისეთი ამოცანების მარტივად შესრულება,
                           </p>
-                          <input type="text" placeholder="სახელი და გვარი" />
-                          <input type="text" placeholder="ტელეფონის ნომერი" />
-                          <input type="text" placeholder="ელექტრონული ფოსტა" />
-                          <textarea placeholder="შეტყობინება"></textarea>
+                          {errors.name && <div>{errors.name}</div>}
+                          <input type="text" id="name" value={values.name} onChange={handleChange} placeholder="სახელი და გვარი" />
+                          {errors.phone && <div>{errors.phone}</div>}
+                          <input type="text" id="phone" value={values.phone} onChange={handleChange} placeholder="ტელეფონის ნომერი" />
+                          {errors.mail && <div>{errors.mail}</div>}
+                          <input type="text" id="mail" value={values.mail} onChange={handleChange} placeholder="ელექტრონული ფოსტა" />
+                          {errors.message && <div>{errors.message}</div>}
+                          <textarea id="message" value={values.message} onChange={handleChange} placeholder="შეტყობინება"></textarea>
                           <MainBtn text="გაგზავნა" />
-                      </div>
+                      </form>
                       <div className="right">
                           <Title2 text="საკონტაქტო ინფორმაცია" />
                           <p>

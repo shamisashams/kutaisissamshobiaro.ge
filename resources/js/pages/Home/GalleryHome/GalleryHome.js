@@ -5,6 +5,7 @@ import "./GalleryHome.css";
 import { MainBtn } from "../../../components/MainBtn/MainBtn";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import  { Link } from "@inertiajs/inertia-react"
 
 const GalleryHome = () => {
   useEffect(() => {
@@ -52,7 +53,9 @@ const GalleryHome = () => {
           );
         })}
       </div>
-      <MainBtn text="ნახე სრულად" />
+        <Link href={route('client.gallery.index')}>
+            <MainBtn text="ნახე სრულად" />
+        </Link>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { ServiceBox } from "../../../components/ServiceBox/ServiceBox";
 import "./ServiceHome.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {Link} from "@inertiajs/inertia-react";
 
 const ServiceHome = () => {
   useEffect(() => {
@@ -53,7 +54,10 @@ const ServiceHome = () => {
             საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი. სწორედ ასეთ დროს არის
             მოსახერხებელი ამ
           </p>
-          <MainBtn text="გაიგე მეტი" />
+            <Link href={route('client.about.index')}>
+                <MainBtn text="გაიგე მეტი" />
+
+            </Link>
         </div>
         <div className="right">
           <Title1 largeText="სერვისები" subtitle="ჩვენ გთავაზობთ" />

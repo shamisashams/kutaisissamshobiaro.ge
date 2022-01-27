@@ -11,6 +11,7 @@ import { Link } from "@inertiajs/inertia-react"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
 const NewsHome = ({news}) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -26,7 +27,10 @@ const NewsHome = ({news}) => {
     <div className="newsHome wrapper">
       <div className="head flex">
         <Title1 largeText="ახალი ამბები" subtitle="სიახლეები" />
-        <MainBtn text="ყველა სიახლე" />
+          <Link href={route('client.news.index')}>
+              <MainBtn text="ყველა სიახლე" />
+
+          </Link>
       </div>
       <div className="news_slider flex" data-aos="fade-right">
         <button className="arrow prev">

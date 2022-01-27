@@ -71,7 +71,7 @@ const Gallery = () => {
                           );
                       })}
                   </div>
-                  <Pagination />
+                  {/*<Pagination />*/}
               </div>
           </div>
 

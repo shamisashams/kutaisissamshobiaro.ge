@@ -3,10 +3,12 @@ import React, {useState} from "react";
 import {ArrowDown, Call, Location, Mail,} from "/img/icons/contact/contactIcons";
 import {SocialMedia} from "../SocialMedia/SocialMedia";
 import "./Header.css";
-import {Link} from '@inertiajs/inertia-react';
+import {Link, usePage} from '@inertiajs/inertia-react';
 
 
 const Header = () => {
+    const { pathname } = usePage().props
+
     const [mobileMenu, setMobileMenu] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -14,12 +16,11 @@ const Header = () => {
     };
 
     // const { pathname } = useLocation();
-    const pathname = "/"
     //
     let transparent = false;
 
-    if (pathname === "/") {
-        transparent = false;
+    if (pathname === "client.home.index") {
+        transparent = true;
     }
     const navbar = [
         {
@@ -96,15 +97,15 @@ const Header = () => {
                             </Link>
                         );
                     })}
-                    <div className="languages">
-                        <div className="active">
-                            ქრთ <ArrowDown color="#171C26"/>
-                        </div>
-                        <div className="drop">
-                            <a href="/">ENG</a>
-                            <a href="/">РУС</a>
-                        </div>
-                    </div>
+                    {/*<div className="languages">*/}
+                    {/*    <div className="active">*/}
+                    {/*        ქრთ <ArrowDown color="#171C26"/>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="drop">*/}
+                    {/*        <a href="/">ENG</a>*/}
+                    {/*        <a href="/">РУС</a>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>
