@@ -15,22 +15,23 @@ import Layout from "../../Layouts/Layout";
 import {usePage} from "@inertiajs/inertia-react";
 
 const Contact = () => {
-    const { errors } = usePage().props
-  const contactInfo = [
+    const { errors, gphone, gemail, gaddress } = usePage().props
+
+    const contactInfo = [
     {
       icon: <Call color="#1DBFCC" />,
       text: "ტელეფონის ნომერი",
-      info: "+995 032 2 111 111",
+      info: gphone.value,
     },
     {
       icon: <Mail color="#1DBFCC" />,
       text: "ელექტრონული ფოსტა",
-      info: "2_samshobiaro@mail.ru",
+      info: gemail.value,
     },
     {
       icon: <Location color="#1DBFCC" />,
       text: "მისამართი",
-      info: "ქუთაისი, ლორთქიფანიძის ქუჩა №13",
+      info: gaddress.value,
     },
   ];
 
@@ -52,7 +53,6 @@ const Contact = () => {
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(values);
         Inertia.post(route('client.contact.mail'), values)
     }
   return (

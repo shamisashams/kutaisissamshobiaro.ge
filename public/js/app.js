@@ -4200,25 +4200,29 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var Contact = function Contact() {
-  var errors = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_9__.usePage)().props.errors;
+  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_9__.usePage)().props,
+      errors = _usePage$props.errors,
+      gphone = _usePage$props.gphone,
+      gemail = _usePage$props.gemail,
+      gaddress = _usePage$props.gaddress;
   var contactInfo = [{
     icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__.Call, {
       color: "#1DBFCC"
     }),
     text: "ტელეფონის ნომერი",
-    info: "+995 032 2 111 111"
+    info: gphone.value
   }, {
     icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__.Mail, {
       color: "#1DBFCC"
     }),
     text: "ელექტრონული ფოსტა",
-    info: "2_samshobiaro@mail.ru"
+    info: gemail.value
   }, {
     icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__.Location, {
       color: "#1DBFCC"
     }),
     text: "მისამართი",
-    info: "ქუთაისი, ლორთქიფანიძის ქუჩა №13"
+    info: gaddress.value
   }];
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
@@ -4241,7 +4245,6 @@ var Contact = function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(values);
     _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.post(route('client.contact.mail'), values);
   }
 
