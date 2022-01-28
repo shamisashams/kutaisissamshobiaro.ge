@@ -2,24 +2,24 @@ import React from "react";
 // import { Link, useLocation } from "react-router-dom";
 import {Map} from "../Map/Map";
 import {SocialMedia} from "../SocialMedia/SocialMedia";
-import {Link} from '@inertiajs/inertia-react';
+import {Link, usePage} from '@inertiajs/inertia-react';
 
-// import {
-//   ArrowDown,
-//   Call,
-//   Mail,
-//   Location,
-// } from "../../assets/images/icons/contact/contactIcons";
+import {
+  ArrowDown,
+  Call,
+  Mail,
+  Location,
+} from "/img/icons/contact/contactIcons";
 import "./Footer.css";
 
 const Footer = () => {
-    // const { pathname } = useLocation();
-
+    const {gphone, gemail, gaddress,pathname } = usePage().props
+    console.log(pathname);
     let hideMap = false;
 
-    // if (pathname === "/contact") {
-    //   hideMap = true;
-    // }
+    if (pathname === route("client.contact.index")) {
+      hideMap = true;
+    }
 
     const navbar = [
         {
@@ -80,18 +80,18 @@ const Footer = () => {
                     </div>
                     <div className="right">
                         <h2>საკონტაქტო ინფორმაცია</h2>
-                        {/*<Link to="/">*/}
-                        {/*  <Call color="#171C26" />*/}
-                        {/*  +995 032 2 111 111*/}
-                        {/*</Link>*/}
-                        {/*<Link to="/">*/}
-                        {/*  <Mail color="#171C26" />*/}
-                        {/*  2_samshobiaro@mail.ru*/}
-                        {/*</Link>*/}
-                        {/*<Link to="/">*/}
-                        {/*  <Location color="#171C26" />*/}
-                        {/*  ქუთაისი, ლორთქიფანიძის ქუჩა №13*/}
-                        {/*</Link>*/}
+                        <Link href="/">
+                          <Call color="#171C26" />
+                            {gphone.value}
+                        </Link>
+                        <Link href="/">
+                          <Mail color="#171C26" />
+                            {gemail.value}
+                        </Link>
+                        <Link href="/">
+                          <Location color="#171C26" />
+                            {gaddress.value}
+                        </Link>
                     </div>
                 </div>
             </div>

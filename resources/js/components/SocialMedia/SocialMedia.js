@@ -1,7 +1,10 @@
 import React from "react";
+import {usePage} from "@inertiajs/inertia-react";
 
 export const SocialMedia = ({ color }) => {
-  return (
+    const { ginstagram, gfacebook } = usePage().props
+
+    return (
     <div className="socialmedia flex centered">
       <a href="/" style={{ marginRight: "20px" }}>
         <svg
@@ -19,7 +22,7 @@ export const SocialMedia = ({ color }) => {
           />
         </svg>
       </a>
-      <a href="/" style={{ marginRight: "20px" }}>
+      <a href={ginstagram.value} target="_blank" style={{ marginRight: "20px" }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15.492"
@@ -35,7 +38,7 @@ export const SocialMedia = ({ color }) => {
           />
         </svg>
       </a>
-      <a href="/">
+      <a href={gfacebook.value} target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="9.415"

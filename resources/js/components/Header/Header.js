@@ -7,7 +7,7 @@ import {Link, usePage} from '@inertiajs/inertia-react';
 
 
 const Header = () => {
-    const { pathname } = usePage().props
+    const {gphone, gemail, gaddress,pathname } = usePage().props
 
     const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -19,7 +19,7 @@ const Header = () => {
     //
     let transparent = false;
 
-    if (pathname === "client.home.index") {
+    if (pathname === route("client.home.index")) {
         transparent = true;
     }
     const navbar = [
@@ -61,15 +61,15 @@ const Header = () => {
                         <div className="contact_info">
                             <Link href="/contact">
                                 <Call color="#fff"/>
-                                +995 032 2 111 111
+                                {gphone.value}
                             </Link>
                             <Link href="/contact">
                                 <Mail color="#fff"/>
-                                2_samshobiaro@mail.ru
+                                {gemail.value}
                             </Link>
                             <Link href="/contact">
                                 <Location color="#fff"/>
-                                ქუთაისი, ლორთქიფანიძის ქუჩა №13
+                                {gaddress.value}
                             </Link>
                         </div>
                     </div>

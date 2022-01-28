@@ -18,7 +18,7 @@ class HandleInertiaRequests extends Middleware
      * @see https://inertiajs.com/server-side-setup#root-template
      * @var string
      */
-    protected $rootView = 'client/layout/base';
+    protected $rootView = 'client/app';
 
     /**
      * Determines the current asset version.
@@ -44,17 +44,15 @@ class HandleInertiaRequests extends Middleware
         $trans = new Db();
 
         $this->settings();
-        $locales = config("translatable.locales");
-        $currentLocale = App::getLocale();
+//        $locales = config("translatable.locales");
+//        $currentLocale = App::getLocale();
         $currentRoute = url()->current();
-//        dd(url()->current());
-//        dd(app()->getLocale());
-//        dd(config("translatable.locales"));
+
 
         return array_merge(parent::share($request), [
             "translations" => $trans->loadTranslations("ge", "client"),
-            "locales" => $locales,
-            "currentLocale" => $currentLocale,
+//            "locales" => $locales,
+//            "currentLocale" => $currentLocale,
             "pathname" => $currentRoute
         ]);
     }

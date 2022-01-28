@@ -1,5 +1,22 @@
 {
     "menu": [
+
+        {
+            "url": "news.index",
+            "name": "news",
+            "i18n": "news",
+            "icon": "language",
+            "slug": "news"
+        },
+        {
+            "url": "setting.index",
+            "name": "setting",
+            "i18n": "setting",
+            "icon": "language",
+            "slug": "setting"
+        }
+    ],
+    "_comment": [
         {
             "url": "category.index",
             "name": "category",
@@ -55,13 +72,6 @@
             "i18n": "language",
             "icon": "language",
             "slug": "language"
-        },
-        {
-            "url": "setting.index",
-            "name": "setting",
-            "i18n": "setting",
-            "icon": "language",
-            "slug": "setting"
         },
         {
             "url": "translation.index",

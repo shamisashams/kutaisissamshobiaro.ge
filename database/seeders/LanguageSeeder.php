@@ -31,18 +31,6 @@ class LanguageSeeder extends Seeder
                 'locale' => 'ge',
                 'status' => true,
                 'default' => true
-            ],
-            [
-                'title' => 'English',
-                'locale' => 'en',
-                'status' => true,
-                'default' => false
-            ],
-            [
-                'title' => 'Русский',
-                'locale' => 'ru',
-                'status' => true,
-                'default' => false
             ]
         ];
 
