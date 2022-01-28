@@ -8,8 +8,8 @@ import "./SingleNews.css";
 import Layout from "../../Layouts/Layout";
 
 
-const SingleNews = ({news}) => {
-    console.log(news)
+const SingleNews = ({news, lastNews}) => {
+    console.log(lastNews)
     const otherNews = [
         {
             img: "/img/news/5.png",
@@ -57,22 +57,26 @@ const SingleNews = ({news}) => {
                         </div>
                     </div>
                     <div className="right">
-                        <Title3 text="ბოლოს დამატებული" />
-                        {otherNews.map((item) => {
+                        {lastNews.length>0 && <Title3 text="ბოლოს დამატებული" />}
+                        {lastNews.map((item) => {
                             return (
-                                <div className="flex other_news">
-                                    <div className="img">
-                                        <img src={item.img} alt="" />
-                                    </div>
-                                    <div>
-                                        <div className="para" style={{ marginBottom: "13px" }}>
-                                            {item.para}
+                                <Link href={route('client.news.show', item.slug)}>
+                                    <div className="flex other_news">
+                                        <div className="img">
+                                            <img src={item.file ? "/"+item.file.path + "/" +item.file.title : ""} alt="" />
                                         </div>
-                                        <div className="date">
-                                            <img src="/img/icons/news/calendar.svg" alt="" /> {item.date}
+                                        <div>
+                                            <div className="para" style={{ marginBottom: "13px" }}>
+                                                {item.title}
+                                            </div>
+
+                                            <div className="date">
+                                                <img src="/img/icons/news/calendar.svg" alt="" /> {item.date}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+
+                                </Link>
                             );
                         })}
                         <ConsultBox

@@ -22,9 +22,9 @@ class NewsController extends Controller
     public function show(string $locale, $slug)
     {
         $news = News::where("status", 1)->where("slug", $slug)->with(['file', 'translations'])->firstOrFail();
-//        dd($news);
+        $lastNews = News::where("status", 1)->where('slug', '<>', $slug)->latest()->with(["file", "translations"])->take(3)->get();
 
 
-        return Inertia::render('SingleNews/SingleNews', ["news" => $news]);
+        return Inertia::render('SingleNews/SingleNews', ["news" => $news, "lastNews" => $lastNews]);
     }
 }
