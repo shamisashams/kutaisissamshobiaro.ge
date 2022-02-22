@@ -93,7 +93,7 @@ const Header = () => {
                 style={{ background: transparent ? "transparent" : "#fff" }}
             >
                 <div className="wrapper navigation flex centered">
-                    {navbar.map((nav) => {
+                    {navbar.map((nav, index) => {
                         return (
                             <Link
                                 className={

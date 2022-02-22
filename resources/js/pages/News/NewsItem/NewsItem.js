@@ -5,7 +5,7 @@ import {Link} from '@inertiajs/inertia-react';
 
 const NewsItem = (props) => {
   return (
-    <div className="news_item">
+    <div key={props.key} className="news_item">
       <div className="img">
         <img src={props.imgSrc} alt="" />
       </div>

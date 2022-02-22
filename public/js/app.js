@@ -3642,11 +3642,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Map_Map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Map/Map */ "./resources/js/Components/Map/Map.js");
-/* harmony import */ var _SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SocialMedia/SocialMedia */ "./resources/js/Components/SocialMedia/SocialMedia.js");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
-/* harmony import */ var _Footer_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer.css */ "./resources/js/Components/Footer/Footer.css");
+/* harmony import */ var _SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SocialMedia/SocialMedia */ "./resources/js/Components/SocialMedia/SocialMedia.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
+/* harmony import */ var _Footer_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer.css */ "./resources/js/Components/Footer/Footer.css");
+/* harmony import */ var _components_Map_Map__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/Map/Map */ "./resources/js/components/Map/Map.js");
  // import { Link, useLocation } from "react-router-dom";
 
 
@@ -3656,7 +3656,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Footer = function Footer() {
-  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.usePage)().props,
+  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props,
       gphone = _usePage$props.gphone,
       gemail = _usePage$props.gemail,
       gaddress = _usePage$props.gaddress,
@@ -3696,7 +3696,7 @@ var Footer = function Footer() {
     style: {
       display: hideMap ? "none" : "block"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Map_Map__WEBPACK_IMPORTED_MODULE_1__.Map, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Map_Map__WEBPACK_IMPORTED_MODULE_5__.Map, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex first",
     style: {
       borderBottom: "3px solid #1DBFCC",
@@ -3710,30 +3710,32 @@ var Footer = function Footer() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/img/header/logo2.png",
     alt: ""
-  }), "\u10D0\u10EE\u10D0\u10DA\u10D8 N2 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10E1\u10D0\u10EE\u10DA\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_2__.SocialMedia, {
+  }), "\u10D0\u10EE\u10D0\u10DA\u10D8 N2 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10E1\u10D0\u10EE\u10DA\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_1__.SocialMedia, {
     color: "#171C26"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "navs"
-  }, navbar.map(function (nav) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, navbar.map(function (nav, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
       className: "nav_link",
       href: nav.link
-    }, nav.nav);
+    }, nav.nav));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "\u10E1\u10D0\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10DD \u10D8\u10DC\u10E4\u10DD\u10E0\u10DB\u10D0\u10EA\u10D8\u10D0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "\u10E1\u10D0\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10DD \u10D8\u10DC\u10E4\u10DD\u10E0\u10DB\u10D0\u10EA\u10D8\u10D0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
     href: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_4__.Call, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_3__.Call, {
     color: "#171C26"
-  }), gphone.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }), gphone.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
     href: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_4__.Mail, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_3__.Mail, {
     color: "#171C26"
-  }), gemail.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }), gemail.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
     href: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_4__.Location, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_3__.Location, {
     color: "#171C26"
   }), gaddress.value)))));
 };
@@ -3754,7 +3756,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
+/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
 /* harmony import */ var _SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SocialMedia/SocialMedia */ "./resources/js/Components/SocialMedia/SocialMedia.js");
 /* harmony import */ var _Header_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header.css */ "./resources/js/Components/Header/Header.css");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
@@ -3869,42 +3871,17 @@ var Header = function Header() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "wrapper navigation flex centered"
-  }, navbar.map(function (nav) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Link, {
+  }, navbar.map(function (nav, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Link, {
       className: nav.link === pathname ? "nav_link active" : "nav_link",
       href: nav.link
-    }, nav.nav);
+    }, nav.nav));
   }))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-
-/***/ }),
-
-/***/ "./resources/js/Components/Map/Map.js":
-/*!********************************************!*\
-  !*** ./resources/js/Components/Map/Map.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Map": () => (/* binding */ Map)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var Map = function Map() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
-    src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11909.044506590086!2d44.7621418!3d41.7364602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1642762740589!5m2!1sen!2sge",
-    style: {
-      border: 0,
-      width: "100%",
-      height: "100%"
-    },
-    loading: "lazy"
-  });
-};
 
 /***/ }),
 
@@ -4073,8 +4050,9 @@ var AboutUs = function AboutUs() {
     className: "content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, "\u10D0\u10EE\u10D0\u10DA\u10D8 N2 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10E1\u10D0\u10EE\u10DA\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10D3\u10D0\u10D9\u10DD\u10DB\u10DE\u10DA\u10D4\u10E5\u10E2\u10D4\u10D1\u10E3\u10DA\u10D8\u10D0 \u10DB\u10D0\u10E6\u10D0\u10DA\u10D9\u10D5\u10D0\u10DA\u10D8\u10E4\u10D8\u10EA\u10D8\u10E3\u10E0\u10D8 \u10D4\u10E5\u10D8\u10DB-\u10E1\u10DE\u10D4\u10EA\u10D8\u10D0\u10DA\u10D8\u10E1\u10E2\u10D4\u10D1\u10D8\u10D7, \u10E0\u10DD\u10DB\u10D4\u10DA\u10D7\u10D0 \u10E3\u10DB\u10D4\u10E2\u10D4\u10E1 \u10DC\u10D0\u10EC\u10D8\u10DA\u10E1 \u10EC\u10D0\u10E0\u10DB\u10DD\u10D0\u10D3\u10D2\u10D4\u10DC\u10D4\u10DC \u10DB\u10E0\u10D0\u10D5\u10D0\u10DA\u10EC\u10DA\u10D8\u10D0\u10DC\u10D8 \u10D2\u10D0\u10DB\u10DD\u10EA\u10D3\u10D8\u10DA\u10D4\u10D1\u10D8\u10E1 \u10DB\u10E5\u10DD\u10DC\u10D3\u10D4 \u10DB\u10D4\u10D0\u10DC-\u10D2\u10D8\u10DC\u10D4\u10D9\u10DD\u10DA\u10DD\u10D2\u10D4\u10D1\u10D8 \u10D3\u10D0 \u10DC\u10D4\u10DD\u10DC\u10D0\u10E2\u10DD\u10DA\u10DD\u10D2\u10D4\u10D1\u10D8."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "checks"
-  }, checkList.map(function (item) {
+  }, checkList.map(function (item, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index,
       className: "item"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       src: "/img/icons/service/check.svg",
@@ -4129,8 +4107,9 @@ var AboutUs = function AboutUs() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "grid",
     "data-aos": "fade-left"
-  }, serviceBoxData.map(function (box) {
+  }, serviceBoxData.map(function (box, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_ServiceBox_ServiceBox__WEBPACK_IMPORTED_MODULE_5__.ServiceBox, {
+      index: index,
       icon: box.icon,
       title: box.title,
       paragraph: box.para
@@ -4155,14 +4134,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
-/* harmony import */ var _components_Map_Map_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Map/Map.js */ "./resources/js/components/Map/Map.js");
-/* harmony import */ var _components_MainBtn_MainBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/MainBtn/MainBtn */ "./resources/js/components/MainBtn/MainBtn.js");
-/* harmony import */ var _components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/PageHead/PageHead */ "./resources/js/components/PageHead/PageHead.js");
-/* harmony import */ var _components_Titles_Titles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/Titles/Titles */ "./resources/js/components/Titles/Titles.js");
-/* harmony import */ var _Contact_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Contact.css */ "./resources/js/Pages/Contact/Contact.css");
-/* harmony import */ var _Layouts_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Layouts/Layout */ "./resources/js/Layouts/Layout.js");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
+/* harmony import */ var _components_MainBtn_MainBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/MainBtn/MainBtn */ "./resources/js/components/MainBtn/MainBtn.js");
+/* harmony import */ var _components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/PageHead/PageHead */ "./resources/js/components/PageHead/PageHead.js");
+/* harmony import */ var _components_Titles_Titles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Titles/Titles */ "./resources/js/components/Titles/Titles.js");
+/* harmony import */ var _Contact_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Contact.css */ "./resources/js/Pages/Contact/Contact.css");
+/* harmony import */ var _Layouts_Layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Layouts/Layout */ "./resources/js/Layouts/Layout.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _components_Map_Map__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/components/Map/Map */ "./resources/js/components/Map/Map.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -4193,7 +4172,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var Contact = function Contact() {
-  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_9__.usePage)().props,
+  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_8__.usePage)().props,
       errors = _usePage$props.errors,
       gphone = _usePage$props.gphone,
       gemail = _usePage$props.gemail,
@@ -4241,9 +4220,9 @@ var Contact = function Contact() {
     _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.post(route("client.contact.mail"), values);
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_8__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_7__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "contactPage"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_5__.PageHead, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_4__.PageHead, {
     title: "\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10D8",
     prev: "\u10DB\u10D7\u10D0\u10D5\u10D0\u10E0\u10D8",
     active: "\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10D8"
@@ -4251,12 +4230,12 @@ var Contact = function Contact() {
     className: "wrapper main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "map"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Map_Map_js__WEBPACK_IMPORTED_MODULE_3__.Map, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Map_Map__WEBPACK_IMPORTED_MODULE_9__.Map, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
     onSubmit: handleSubmit,
     className: "left"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Titles_Titles__WEBPACK_IMPORTED_MODULE_6__.Title2, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Titles_Titles__WEBPACK_IMPORTED_MODULE_5__.Title2, {
     text: "\u10D7\u10E3 \u10D2\u10D0\u10E5\u10D5\u10D7 \u10D9\u10D8\u10D7\u10EE\u10D5\u10D4\u10D1\u10D8 \u10DB\u10DD\u10D2\u10D5\u10EC\u10D4\u10E0\u10D4\u10D7"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10E9\u10D5\u10D4\u10DC \u10DB\u10D6\u10D0\u10D3 \u10D5\u10D0\u10E0\u10D7 \u10DC\u10D4\u10D1\u10D8\u10E1\u10DB\u10D8\u10D4\u10E0 \u10D9\u10D8\u10D7\u10EE\u10D5\u10D0\u10D6\u10D4 \u10D2\u10D0\u10D2\u10EA\u10D4\u10D7 \u10DE\u10D0\u10E1\u10E3\u10EE\u10D8"), errors.name && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, errors.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "text",
@@ -4281,14 +4260,19 @@ var Contact = function Contact() {
     value: values.message,
     onChange: handleChange,
     placeholder: "\u10E8\u10D4\u10E2\u10E7\u10DD\u10D1\u10D8\u10DC\u10D4\u10D1\u10D0"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MainBtn_MainBtn__WEBPACK_IMPORTED_MODULE_4__.MainBtn, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MainBtn_MainBtn__WEBPACK_IMPORTED_MODULE_3__.MainBtn, {
     text: "\u10D2\u10D0\u10D2\u10D6\u10D0\u10D5\u10DC\u10D0"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Titles_Titles__WEBPACK_IMPORTED_MODULE_6__.Title2, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Titles_Titles__WEBPACK_IMPORTED_MODULE_5__.Title2, {
     text: "\u10E1\u10D0\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10DD \u10D8\u10DC\u10E4\u10DD\u10E0\u10DB\u10D0\u10EA\u10D8\u10D0"
+<<<<<<< HEAD
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10D3\u10D0\u10DB\u10D0\u10E2\u10D4\u10D1\u10D8\u10D7\u10D8 \u10D8\u10DC\u10E4\u10DD\u10E0\u10DB\u10D0\u10EA\u10D8\u10D8\u10E1\u10D7\u10D5\u10D8\u10E1 \u10E8\u10D4\u10D2\u10D8\u10EB\u10DA\u10D8\u10D0\u10D7 \u10D3\u10D0\u10D2\u10D5\u10D8\u10D9\u10D0\u10D5\u10E8\u10D8\u10E0\u10D3\u10D4\u10D7"), contactInfo.map(function (info) {
+=======
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10D3\u10D4\u10D5\u10D4\u10DA\u10DD\u10DE\u10D4\u10E0\u10D8\u10E1 \u10D0\u10DC \u10D3\u10D8\u10D6\u10D0\u10D8\u10DC\u10D4\u10E0\u10D8\u10E1 \u10E7\u10DD\u10D5\u10D4\u10DA\u10D3\u10E6\u10D8\u10E3\u10E0 \u10E1\u10D0\u10E5\u10DB\u10D8\u10D0\u10DC\u10DD\u10D1\u10D0\u10E8\u10D8 \u10EE\u10E8\u10D8\u10E0\u10D0\u10D3 \u10D0\u10E0\u10D8\u10E1 \u10EE\u10DD\u10DA\u10DB\u10D4 \u10E1\u10D0\u10ED\u10D8\u10E0\u10DD \u10D8\u10E1\u10D4\u10D7\u10D8 \u10D0\u10DB\u10DD\u10EA\u10D0\u10DC\u10D4\u10D1\u10D8\u10E1 \u10DB\u10D0\u10E0\u10E2\u10D8\u10D5\u10D0\u10D3 \u10E8\u10D4\u10E1\u10E0\u10E3\u10DA\u10D4\u10D1\u10D0,"), contactInfo.map(function (info, index) {
+>>>>>>> ed5a56fbb8ead58a079b0a6eb26714174a4556f7
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index,
       className: "flex contact_info"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "icon flex centered"
@@ -4372,8 +4356,9 @@ var Gallery = function Gallery() {
     className: "wrapper main "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "grid"
-  }, photos.map(function (photo) {
+  }, photos.map(function (photo, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index,
       className: "img",
       style: {
         gridColumn: "span ".concat(photo.span)
@@ -4448,8 +4433,10 @@ var DoctorsHome = function DoctorsHome() {
     className: "p"
   }, "\u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD\u10E1 \u10E7\u10D5\u10D4\u10DA\u10D0 \u10D4\u10E5\u10D8\u10DB\u10D8, \u10D2\u10D0\u10DC\u10E1\u10D0\u10D9\u10E3\u10D7\u10E0\u10D4\u10D1\u10D8\u10D7 \u10D9\u10D8 \u10D2\u10D0\u10DC\u10E7\u10DD\u10E4\u10D8\u10DA\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D0 \u10E1\u10D0\u10DB\u10E1\u10D0\u10EE\u10E3\u10E0\u10D8\u10E1 \u10E3\u10E4\u10E0\u10DD\u10E1\u10D4\u10D1\u10D8 \u10D0\u10E0\u10D8\u10D0\u10DC \u10DB\u10E0\u10D0\u10D5\u10D0\u10DA\u10EC\u10DA\u10D8\u10D0\u10DC\u10D8 \u10D2\u10D0\u10DB\u10DD\u10EA\u10D3\u10D8\u10DA\u10D4\u10D1\u10D8\u10E1 \u10DB\u10E5\u10DD\u10DC\u10D4 \u10DE\u10E0\u10DD\u10E4\u10D4\u10E1\u10D8\u10DD\u10DC\u10D0\u10DA\u10D4\u10D1\u10D8."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "checks"
-  }, checks.map(function (item, i) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, checks.map(function (item, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       src: "/img/icons/service/check.svg",
       alt: ""
     })), item);
@@ -4526,8 +4513,9 @@ var GalleryHome = function GalleryHome() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "photo_grid",
     "data-aos": "fade-up"
-  }, images.map(function (img) {
+  }, images.map(function (img, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index,
       className: "img",
       style: {
         gridColumn: "span ".concat(img.span)
@@ -4559,10 +4547,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _img_hero_1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../img/hero/1.png */ "./public/img/hero/1.png");
-/* harmony import */ var _img_hero_2_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../img/hero/2.png */ "./public/img/hero/2.png");
-/* harmony import */ var _img_hero_3_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../img/hero/3.png */ "./public/img/hero/3.png");
-/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
+/* harmony import */ var _img_hero_1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/hero/1.png */ "./public/img/hero/1.png");
+/* harmony import */ var _img_hero_2_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../img/hero/2.png */ "./public/img/hero/2.png");
+/* harmony import */ var _img_hero_3_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../img/hero/3.png */ "./public/img/hero/3.png");
+/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
 /* harmony import */ var _components_MainBtn_MainBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/MainBtn/MainBtn */ "./resources/js/components/MainBtn/MainBtn.js");
 /* harmony import */ var _HeroSlider_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./HeroSlider.css */ "./resources/js/Pages/Home/HeroSlider/HeroSlider.css");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -4749,11 +4737,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_elastic_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-elastic-carousel */ "./node_modules/react-elastic-carousel/dist/index.es.js");
-/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
+/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
 /* harmony import */ var _components_MainBtn_MainBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/MainBtn/MainBtn */ "./resources/js/components/MainBtn/MainBtn.js");
 /* harmony import */ var _components_Titles_Titles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/Titles/Titles */ "./resources/js/components/Titles/Titles.js");
 /* harmony import */ var _NewsHome_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NewsHome.css */ "./resources/js/Pages/Home/NewsHome/NewsHome.css");
-/* harmony import */ var _img_icons_news_calendar_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../img/icons/news/calendar.svg */ "./public/img/icons/news/calendar.svg");
+/* harmony import */ var _img_icons_news_calendar_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../img/icons/news/calendar.svg */ "./public/img/icons/news/calendar.svg");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_8__);
@@ -4807,8 +4795,9 @@ var NewsHome = function NewsHome(_ref) {
     color: "#1dbfcc"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_elastic_carousel__WEBPACK_IMPORTED_MODULE_1__.default, {
     breakPoints: breakPoints
-  }, news.map(function (item) {
+  }, news.map(function (item, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index,
       className: "news_box"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "img"
@@ -4914,8 +4903,9 @@ var ServiceHome = function ServiceHome() {
   }, "\u10D0\u10EE\u10D0\u10DA\u10D8 #2 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10D2\u10D7\u10D0\u10D5\u10D0\u10D6\u10DD\u10D1\u10D7 \u10E1\u10E0\u10E3\u10DA\u10D8 \u10E1\u10DE\u10D4\u10E5\u10E2\u10E0\u10D8\u10E1 \u10E1\u10E2\u10D0\u10EA\u10D8\u10DD\u10DC\u10D0\u10DA\u10E3\u10E0 \u10D3\u10D0 \u10D0\u10DB\u10D1\u10E3\u10DA\u10D0\u10E2\u10DD\u10E0\u10D8\u10E3\u10DA \u10DB\u10DD\u10DB\u10E1\u10D0\u10EE\u10E3\u10E0\u10D4\u10D1\u10D0\u10E1."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "service_grid",
     "data-aos": "fade-left"
-  }, serviceBoxData.map(function (box) {
+  }, serviceBoxData.map(function (box, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_ServiceBox_ServiceBox__WEBPACK_IMPORTED_MODULE_3__.ServiceBox, {
+      index: index,
       icon: box.icon,
       title: box.title,
       paragraph: box.para,
@@ -4970,8 +4960,9 @@ var News = function News(_ref) {
     className: "wrapper2 flex main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "news_list"
-  }, newsData.map(function (item) {
+  }, newsData.map(function (item, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NewsItem_NewsItem__WEBPACK_IMPORTED_MODULE_2__.default, {
+      key: index,
       imgSrc: item.file ? "/" + item.file.path + "/" + item.file.title : "",
       title: item.title,
       paragraph: item.short_description,
@@ -5024,6 +5015,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var NewsItem = function NewsItem(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    key: props.key,
     className: "news_item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "img"
@@ -5107,8 +5099,9 @@ var OurDoctors = function OurDoctors() {
     text: "\u10D2\u10D0\u10D8\u10EA\u10D0\u10DC\u10D8\u10D7 \u10E9\u10D5\u10D4\u10DC\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD\u10E1 \u10E7\u10D5\u10D4\u10DA\u10D0 \u10D1\u10DA\u10DD\u10D9\u10E1 \u10D4\u10DB\u10E1\u10D0\u10EE\u10E3\u10E0\u10D4\u10D1\u10D8\u10D0\u10DC \u10DB\u10E3\u10D3\u10DB\u10D8\u10D5 \u10DE\u10E0\u10DD\u10E4\u10D4\u10E1\u10D8\u10E3\u10DA \u10D6\u10E0\u10D3\u10D0\u10D6\u10D4 \u10DD\u10E0\u10D8\u10D4\u10DC\u10E2\u10D8\u10E0\u10D4\u10D1\u10E3\u10DA\u10D8 \u10D9\u10D5\u10D0\u10DA\u10D8\u10E4\u10D8\u10EA\u10D8\u10E3\u10E0\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD\u10E1 \u10D0\u10EE\u10D0\u10DA\u10D2\u10D0\u10D6\u10E0\u10D3\u10D0 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8 \u10D9\u10D8 \u10EE\u10D4\u10DA\u10DB\u10EB\u10E6\u10D5\u10D0\u10DC\u10D4\u10DA\u10DD\u10D1\u10D4\u10DC \u10D9\u10DA\u10D8\u10DC\u10D8\u10D9\u10D8\u10E1 \u10DB\u10D7\u10D0\u10D5\u10D0\u10E0\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D8\u10E1, \u10D8\u10E0\u10D0\u10D9\u10DA\u10D8 \u10DB\u10D4\u10E0\u10D9\u10D5\u10D8\u10DA\u10D0\u10EB\u10D8\u10E1 \u10DB\u10D8\u10D4\u10E0 \u10E1\u10DE\u10D4\u10EA\u10D8\u10D0\u10DA\u10E3\u10E0\u10D0\u10D3 \u10D3\u10D0\u10D3\u10D2\u10D4\u10DC\u10D8\u10DA\u10D8 \u10DE\u10E0\u10DD\u10D2\u10E0\u10D0\u10DB\u10D8\u10D7 \u10D3\u10D0 \u10D2\u10D0\u10D3\u10D8\u10D0\u10DC \u10DB\u10E3\u10D3\u10DB\u10D8\u10D5 \u10DE\u10E0\u10DD\u10E4\u10D4\u10E1\u10D8\u10E3\u10DA \u10D2\u10D0\u10D3\u10D0\u10DB\u10D6\u10D0\u10D3\u10D4\u10D1\u10D0\u10E1.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "grid"
-  }, doctors.map(function (doctor) {
+  }, doctors.map(function (doctor, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: index,
       className: "item"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "img"
@@ -5576,7 +5569,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Pagination": () => (/* binding */ Pagination)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
+/* harmony import */ var _img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/icons/contact/contactIcons */ "./public/img/icons/contact/contactIcons.js");
 /* harmony import */ var _Pagination_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Pagination.css */ "./resources/js/components/Pagination/Pagination.css");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 
@@ -5635,6 +5628,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ServiceBox = function ServiceBox(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    key: props.index,
     className: "service_box",
     style: {
       background: props.background
@@ -5886,7 +5880,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer {\r\n  background: #efefef;\r\n  margin-top: 130px;\r\n  padding-bottom: 50px;\r\n}\r\n.footer .map {\r\n  width: 100%;\r\n  height: 260px;\r\n  transform: translateY(-130px);\r\n  margin-bottom: -50px;\r\n  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);\r\n}\r\n.footer .logo {\r\n  font-size: 20px;\r\n  color: #db0761;\r\n}\r\n.footer .logo img {\r\n  margin-right: 10px;\r\n}\r\n.footer .content {\r\n  align-items: flex-start;\r\n}\r\n.footer .content .right {\r\n  text-align: right;\r\n}\r\n.footer .content .right a {\r\n  display: block;\r\n  margin-bottom: 20px;\r\n}\r\n.footer .content .right h2 {\r\n  margin-bottom: 37px;\r\n  font-size: 22px;\r\n}\r\n.footer .content .right svg {\r\n  margin-right: 10px;\r\n}\r\n.footer .content .nav_link {\r\n  margin-right: 20px;\r\n}\r\n\r\n@media screen and (max-width: 850px) {\r\n  .footer {\r\n    padding-bottom: 22px;\r\n  }\r\n  .footer .content {\r\n    flex-direction: column;\r\n  }\r\n  .footer .content .right {\r\n    text-align: left;\r\n    margin-top: 30px;\r\n  }\r\n  .footer .content .right h2 {\r\n    margin-bottom: 20px;\r\n    font-size: 20px;\r\n  }\r\n  .footer .content .right a {\r\n    margin-bottom: 11px;\r\n  }\r\n  .footer .map {\r\n    height: 176px;\r\n    transform: translateY(-75px);\r\n  }\r\n}\r\n@media screen and (max-width: 450px) {\r\n  .footer .first {\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n  }\r\n  .footer .logo {\r\n    margin-bottom: 20px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer {\n  background: #efefef;\n  margin-top: 130px;\n  padding-bottom: 50px;\n}\n.footer .map {\n  width: 100%;\n  height: 260px;\n  transform: translateY(-130px);\n  margin-bottom: -50px;\n  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);\n}\n.footer .logo {\n  font-size: 20px;\n  color: #db0761;\n}\n.footer .logo img {\n  margin-right: 10px;\n}\n.footer .content {\n  align-items: flex-start;\n}\n.footer .content .right {\n  text-align: right;\n}\n.footer .content .right a {\n  display: block;\n  margin-bottom: 20px;\n}\n.footer .content .right h2 {\n  margin-bottom: 37px;\n  font-size: 22px;\n}\n.footer .content .right svg {\n  margin-right: 10px;\n}\n.footer .content .nav_link {\n  margin-right: 20px;\n}\n\n@media screen and (max-width: 850px) {\n  .footer {\n    padding-bottom: 22px;\n  }\n  .footer .content {\n    flex-direction: column;\n  }\n  .footer .content .right {\n    text-align: left;\n    margin-top: 30px;\n  }\n  .footer .content .right h2 {\n    margin-bottom: 20px;\n    font-size: 20px;\n  }\n  .footer .content .right a {\n    margin-bottom: 11px;\n  }\n  .footer .map {\n    height: 176px;\n    transform: translateY(-75px);\n  }\n}\n@media screen and (max-width: 450px) {\n  .footer .first {\n    flex-direction: column;\n    align-items: flex-start;\n  }\n  .footer .logo {\n    margin-bottom: 20px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5958,7 +5952,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contactPage .main {\r\n  padding-top: 70px;\r\n}\r\n.contactPage .content {\r\n  align-items: flex-start;\r\n}\r\n.contactPage .map {\r\n  height: 260px;\r\n  width: 100%;\r\n  margin-bottom: 80px;\r\n}\r\n.contactPage .title2 {\r\n  font-size: 30px;\r\n}\r\n.contactPage .title2::after {\r\n  bottom: -11px;\r\n}\r\n.contactPage p {\r\n  margin-bottom: 40px;\r\n}\r\n.contactPage .left {\r\n  max-width: 600px;\r\n  margin-right: 150px;\r\n}\r\n.contactPage input,\r\n.contactPage textarea {\r\n  width: 100%;\r\n  height: 50px;\r\n  padding-left: 15px;\r\n  border: 1px solid #1dbfcc;\r\n  margin-bottom: 20px;\r\n}\r\n.contactPage textarea {\r\n  height: 100px;\r\n  padding-top: 12px;\r\n}\r\n.contactPage .main_btn {\r\n  margin: auto;\r\n  margin-right: 0;\r\n}\r\n.contactPage .contact_info {\r\n  justify-content: flex-start;\r\n  margin-bottom: 45px;\r\n}\r\n.contactPage .contact_info .icon {\r\n  width: 51px;\r\n  height: 51px;\r\n  border: 1px solid #1dbfcc;\r\n  margin-right: 30px;\r\n}\r\n.contactPage .contact_info .txt {\r\n  opacity: 0.5;\r\n}\r\n.contactPage .contact_info h5 {\r\n  font-size: 20px;\r\n}\r\n\r\n@media screen and (max-width: 1300px) {\r\n  .contactPage .left {\r\n    max-width: 535px;\r\n    margin-right: 55px;\r\n  }\r\n}\r\n@media screen and (max-width: 860px) {\r\n  .contactPage .content {\r\n    flex-direction: column;\r\n  }\r\n  .contactPage .left {\r\n    max-width: none;\r\n    margin-right: 0;\r\n    margin-bottom: 40px;\r\n  }\r\n  .contactPage .main {\r\n    padding-top: 42px;\r\n  }\r\n  .contactPage .map {\r\n    height: 188px;\r\n    margin-bottom: 40px;\r\n  }\r\n  .contactPage .title2 {\r\n    font-size: 23px;\r\n  }\r\n  .contactPage .contact_info {\r\n    margin-bottom: 16px;\r\n  }\r\n  .contactPage .contact_info .icon {\r\n    margin-right: 15px;\r\n  }\r\n}\r\n@media screen and (max-width: 500px) {\r\n  .contactPage .contact_info h5 {\r\n    font-size: 16px;\r\n  }\r\n  .contactPage .contact_info .txt {\r\n    font-size: 13px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contactPage .main {\n  padding-top: 70px;\n}\n.contactPage .content {\n  align-items: flex-start;\n}\n.contactPage .map {\n  height: 260px;\n  width: 100%;\n  margin-bottom: 80px;\n}\n.contactPage .title2 {\n  font-size: 30px;\n}\n.contactPage .title2::after {\n  bottom: -11px;\n}\n.contactPage p {\n  margin-bottom: 40px;\n}\n.contactPage .left {\n  max-width: 600px;\n  margin-right: 150px;\n}\n.contactPage input,\n.contactPage textarea {\n  width: 100%;\n  height: 50px;\n  padding-left: 15px;\n  border: 1px solid #1dbfcc;\n  margin-bottom: 20px;\n}\n.contactPage textarea {\n  height: 100px;\n  padding-top: 12px;\n}\n.contactPage .main_btn {\n  margin: auto;\n  margin-right: 0;\n}\n.contactPage .contact_info {\n  justify-content: flex-start;\n  margin-bottom: 45px;\n}\n.contactPage .contact_info .icon {\n  width: 51px;\n  height: 51px;\n  border: 1px solid #1dbfcc;\n  margin-right: 30px;\n}\n.contactPage .contact_info .txt {\n  opacity: 0.5;\n}\n.contactPage .contact_info h5 {\n  font-size: 20px;\n}\n\n@media screen and (max-width: 1300px) {\n  .contactPage .left {\n    max-width: 535px;\n    margin-right: 55px;\n  }\n}\n@media screen and (max-width: 860px) {\n  .contactPage .content {\n    flex-direction: column;\n  }\n  .contactPage .left {\n    max-width: none;\n    margin-right: 0;\n    margin-bottom: 40px;\n  }\n  .contactPage .main {\n    padding-top: 42px;\n  }\n  .contactPage .map {\n    height: 188px;\n    margin-bottom: 40px;\n  }\n  .contactPage .title2 {\n    font-size: 23px;\n  }\n  .contactPage .contact_info {\n    margin-bottom: 16px;\n  }\n  .contactPage .contact_info .icon {\n    margin-right: 15px;\n  }\n}\n@media screen and (max-width: 500px) {\n  .contactPage .contact_info h5 {\n    font-size: 16px;\n  }\n  .contactPage .contact_info .txt {\n    font-size: 13px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5982,7 +5976,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".galleryPage .wrapper.main {\r\n  padding-top: 60px;\r\n  padding-bottom: 30px;\r\n}\r\n.galleryPage .grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(5, 1fr);\r\n  grid-gap: 16px;\r\n  margin-bottom: 30px;\r\n}\r\n.galleryPage .grid .img {\r\n  width: 100%;\r\n  height: 390px;\r\n  overflow: hidden;\r\n}\r\n.galleryPage .grid img {\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n@media screen and (max-width: 1100px) {\r\n  .galleryPage .grid {\r\n    grid-template-columns: repeat(4, 1fr);\r\n  }\r\n  .galleryPage .grid .img {\r\n    height: 310px;\r\n  }\r\n}\r\n@media screen and (max-width: 800px) {\r\n  .galleryPage .grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  .galleryPage .grid .img {\r\n    grid-column: span 1 !important;\r\n  }\r\n}\r\n@media screen and (max-width: 800px) {\r\n  .galleryPage .grid {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  .galleryPage .grid .img {\r\n    height: auto;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".galleryPage .wrapper.main {\n  padding-top: 60px;\n  padding-bottom: 30px;\n}\n.galleryPage .grid {\n  display: grid;\n  grid-template-columns: repeat(5, 1fr);\n  grid-gap: 16px;\n  margin-bottom: 30px;\n}\n.galleryPage .grid .img {\n  width: 100%;\n  height: 390px;\n  overflow: hidden;\n}\n.galleryPage .grid img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n@media screen and (max-width: 1100px) {\n  .galleryPage .grid {\n    grid-template-columns: repeat(4, 1fr);\n  }\n  .galleryPage .grid .img {\n    height: 310px;\n  }\n}\n@media screen and (max-width: 800px) {\n  .galleryPage .grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n  .galleryPage .grid .img {\n    grid-column: span 1 !important;\n  }\n}\n@media screen and (max-width: 800px) {\n  .galleryPage .grid {\n    grid-template-columns: 1fr;\n  }\n  .galleryPage .grid .img {\n    height: auto;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6006,7 +6000,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".doctorsHome {\r\n  padding-bottom: 30px;\r\n}\r\n.doctorsHome .img_shapes {\r\n  display: grid;\r\n  grid-template-columns: repeat(2, 1fr);\r\n  grid-gap: 15px 25px;\r\n  margin-right: 40px;\r\n}\r\n.doctorsHome .shape {\r\n  overflow: hidden;\r\n}\r\n.doctorsHome .shape img {\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n.doctorsHome .shape_1 {\r\n  border-radius: 130px 130px 15px 130px;\r\n  grid-row: span 2;\r\n  width: 350px;\r\n  height: 520px;\r\n}\r\n.doctorsHome .shape_2 {\r\n  border-radius: 85px 85px 85px 10px;\r\n  width: 250px;\r\n  height: 100%;\r\n}\r\n.doctorsHome .shape_3 {\r\n  border-radius: 10px 60px 60px 60px;\r\n  height: 100%;\r\n  width: 167px;\r\n  background-color: #db0761;\r\n  margin: 0 auto auto 0;\r\n}\r\n.doctorsHome h3 {\r\n  font-size: 50px;\r\n  margin-bottom: 20px;\r\n}\r\n.doctorsHome .checks {\r\n  display: block;\r\n  margin: 25px 0;\r\n}\r\n.doctorsHome .checks p {\r\n  display: inline-block;\r\n  margin-right: 20px;\r\n  margin-bottom: 25px;\r\n}\r\n.doctorsHome .checks p img {\r\n  vertical-align: middle;\r\n  margin-right: 11px;\r\n}\r\n\r\n@media screen and (max-width: 1210px) {\r\n  .doctorsHome .img_shapes {\r\n    grid-gap: 9px 17px;\r\n    margin-right: 30px;\r\n  }\r\n  .doctorsHome .shape_1 {\r\n    width: 300px;\r\n    height: 400px;\r\n  }\r\n  .doctorsHome .shape_2 {\r\n    border-radius: 74px 74px 74px 10px;\r\n    width: 194px;\r\n  }\r\n  .doctorsHome .shape_3 {\r\n    border-radius: 10px 53px 53px 53px;\r\n    width: 119px;\r\n  }\r\n}\r\n@media screen and (max-width: 1075px) {\r\n  .doctorsHome {\r\n    flex-direction: column-reverse;\r\n  }\r\n  .doctorsHome .img_shapes {\r\n    margin-right: 0;\r\n  }\r\n  .doctorsHome .img_shapes {\r\n    margin: 30px 0;\r\n  }\r\n}\r\n@media screen and (max-width: 580px) {\r\n  .doctorsHome .shape_1 {\r\n    width: 225px;\r\n    height: 314px;\r\n    border-radius: 77px 106px 15px 106px;\r\n  }\r\n  .doctorsHome .shape_2 {\r\n    border-radius: 80px 44px 74px 10px;\r\n    width: 160px;\r\n  }\r\n  .doctorsHome .shape_3 {\r\n    width: 92px;\r\n  }\r\n  .doctorsHome .img_shapes {\r\n    grid-gap: 4px 9px;\r\n  }\r\n  .doctorsHome h3 {\r\n    font-size: 33px;\r\n    margin-bottom: 4px;\r\n  }\r\n  .doctorsHome .checks p {\r\n    margin-right: 12px;\r\n    margin-bottom: 9px;\r\n  }\r\n}\r\n@media screen and (max-width: 420px) {\r\n  .doctorsHome .shape_1 {\r\n    width: 202px;\r\n    height: 264px;\r\n    border-radius: 63px 95px 15px 91px;\r\n  }\r\n  .doctorsHome .shape_2 {\r\n    border-radius: 73px 44px 65px 10px;\r\n    width: 131px;\r\n  }\r\n  .doctorsHome .shape_3 {\r\n    width: 81px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".doctorsHome {\n  padding-bottom: 30px;\n}\n.doctorsHome .img_shapes {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-gap: 15px 25px;\n  margin-right: 40px;\n}\n.doctorsHome .shape {\n  overflow: hidden;\n}\n.doctorsHome .shape img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.doctorsHome .shape_1 {\n  border-radius: 130px 130px 15px 130px;\n  grid-row: span 2;\n  width: 350px;\n  height: 520px;\n}\n.doctorsHome .shape_2 {\n  border-radius: 85px 85px 85px 10px;\n  width: 250px;\n  height: 100%;\n}\n.doctorsHome .shape_3 {\n  border-radius: 10px 60px 60px 60px;\n  height: 100%;\n  width: 167px;\n  background-color: #db0761;\n  margin: 0 auto auto 0;\n}\n.doctorsHome h3 {\n  font-size: 50px;\n  margin-bottom: 20px;\n}\n.doctorsHome .checks {\n  display: block;\n  margin: 25px 0;\n}\n.doctorsHome .checks p {\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 25px;\n}\n.doctorsHome .checks p img {\n  vertical-align: middle;\n  margin-right: 11px;\n}\n\n@media screen and (max-width: 1210px) {\n  .doctorsHome .img_shapes {\n    grid-gap: 9px 17px;\n    margin-right: 30px;\n  }\n  .doctorsHome .shape_1 {\n    width: 300px;\n    height: 400px;\n  }\n  .doctorsHome .shape_2 {\n    border-radius: 74px 74px 74px 10px;\n    width: 194px;\n  }\n  .doctorsHome .shape_3 {\n    border-radius: 10px 53px 53px 53px;\n    width: 119px;\n  }\n}\n@media screen and (max-width: 1075px) {\n  .doctorsHome {\n    flex-direction: column-reverse;\n  }\n  .doctorsHome .img_shapes {\n    margin-right: 0;\n  }\n  .doctorsHome .img_shapes {\n    margin: 30px 0;\n  }\n}\n@media screen and (max-width: 580px) {\n  .doctorsHome .shape_1 {\n    width: 225px;\n    height: 314px;\n    border-radius: 77px 106px 15px 106px;\n  }\n  .doctorsHome .shape_2 {\n    border-radius: 80px 44px 74px 10px;\n    width: 160px;\n  }\n  .doctorsHome .shape_3 {\n    width: 92px;\n  }\n  .doctorsHome .img_shapes {\n    grid-gap: 4px 9px;\n  }\n  .doctorsHome h3 {\n    font-size: 33px;\n    margin-bottom: 4px;\n  }\n  .doctorsHome .checks p {\n    margin-right: 12px;\n    margin-bottom: 9px;\n  }\n}\n@media screen and (max-width: 420px) {\n  .doctorsHome .shape_1 {\n    width: 202px;\n    height: 264px;\n    border-radius: 63px 95px 15px 91px;\n  }\n  .doctorsHome .shape_2 {\n    border-radius: 73px 44px 65px 10px;\n    width: 131px;\n  }\n  .doctorsHome .shape_3 {\n    width: 81px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6030,7 +6024,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".GalleryHome {\r\n  padding-bottom: 60px;\r\n  text-align: center;\r\n}\r\n.GalleryHome .photo_grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(5, 1fr);\r\n  grid-gap: 16px;\r\n  margin: 35px 0;\r\n}\r\n.GalleryHome .photo_grid .img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n.GalleryHome .photo_grid .img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n.GalleryHome .main_btn {\r\n  margin: auto;\r\n}\r\n\r\n@media screen and (max-width: 1000px) {\r\n  .GalleryHome .photo_grid {\r\n    grid-template-columns: repeat(4, 1fr);\r\n    grid-gap: 9px;\r\n  }\r\n  .GalleryHome .photo_grid .img {\r\n    grid-column: span 1 !important;\r\n  }\r\n  .GalleryHome .photo_grid .img:nth-child(2) {\r\n    grid-column: span 2 !important;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n  .GalleryHome .photo_grid {\r\n    grid-template-columns: repeat(3, 1fr);\r\n    grid-gap: 9px;\r\n  }\r\n  .GalleryHome .photo_grid .img:nth-child(7) {\r\n    grid-column: span 2 !important;\r\n  }\r\n}\r\n@media screen and (max-width: 600px) {\r\n  .GalleryHome .photo_grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  .GalleryHome .photo_grid .img:nth-child(2),\r\n  .GalleryHome .photo_grid .img:nth-child(7) {\r\n    grid-column: span 1 !important;\r\n  }\r\n  .GalleryHome .photo_grid .img:nth-child(1),\r\n  .GalleryHome .photo_grid .img:nth-child(4) {\r\n    grid-column: span 2 !important;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".GalleryHome {\n  padding-bottom: 60px;\n  text-align: center;\n}\n.GalleryHome .photo_grid {\n  display: grid;\n  grid-template-columns: repeat(5, 1fr);\n  grid-gap: 16px;\n  margin: 35px 0;\n}\n.GalleryHome .photo_grid .img {\n  width: 100%;\n  height: 100%;\n}\n.GalleryHome .photo_grid .img img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.GalleryHome .main_btn {\n  margin: auto;\n}\n\n@media screen and (max-width: 1000px) {\n  .GalleryHome .photo_grid {\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 9px;\n  }\n  .GalleryHome .photo_grid .img {\n    grid-column: span 1 !important;\n  }\n  .GalleryHome .photo_grid .img:nth-child(2) {\n    grid-column: span 2 !important;\n  }\n}\n\n@media screen and (max-width: 800px) {\n  .GalleryHome .photo_grid {\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap: 9px;\n  }\n  .GalleryHome .photo_grid .img:nth-child(7) {\n    grid-column: span 2 !important;\n  }\n}\n@media screen and (max-width: 600px) {\n  .GalleryHome .photo_grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n  .GalleryHome .photo_grid .img:nth-child(2),\n  .GalleryHome .photo_grid .img:nth-child(7) {\n    grid-column: span 1 !important;\n  }\n  .GalleryHome .photo_grid .img:nth-child(1),\n  .GalleryHome .photo_grid .img:nth-child(4) {\n    grid-column: span 2 !important;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6054,7 +6048,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".heroSlider {\r\n  position: relative;\r\n  height: 650px;\r\n  overflow: hidden;\r\n}\r\n\r\n.heroSlider article {\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  color: #171c26;\r\n  transition: 1s;\r\n}\r\n.heroSlider article.lastSlide {\r\n  visibility: hidden;\r\n}\r\n.heroSlider article.activeSlide {\r\n  transform: translateX(0);\r\n}\r\n.heroSlider article.nextSlide {\r\n  visibility: hidden;\r\n}\r\n.heroSlider article.lastSlide .bg {\r\n  transform: translateX(-100%);\r\n}\r\n.heroSlider article.activeSlide .bg {\r\n  transform: translateX(0);\r\n}\r\n.heroSlider article.nextSlide .bg {\r\n  transform: translateX(100%);\r\n}\r\n.heroSlider article::after {\r\n  height: 350px;\r\n  width: 100%;\r\n  left: 0;\r\n  top: 0;\r\n  z-index: 0;\r\n  background: linear-gradient(to bottom, #ffffff69, transparent);\r\n}\r\n.heroSlider .bg {\r\n  position: absolute;\r\n  z-index: -1;\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n  transition: 1s;\r\n}\r\n.heroSlider .wrapper {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n  justify-content: center;\r\n}\r\n.heroSlider .content {\r\n  transform: translateX(-80px);\r\n  opacity: 0;\r\n  visibility: hidden;\r\n  transition: 1.2s;\r\n  position: relative;\r\n  z-index: 10;\r\n}\r\n.heroSlider .activeSlide .content {\r\n  transform: translateX(0);\r\n  opacity: 1;\r\n  visibility: visible;\r\n}\r\n.heroSlider .arrow {\r\n  z-index: 100;\r\n  position: absolute;\r\n  top: 50%;\r\n  border: 2px solid transparent;\r\n  width: 41px;\r\n  height: 41px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  transition: 0.5s;\r\n}\r\n.heroSlider .arrow:hover {\r\n  border: 2px solid #1dbfcc;\r\n}\r\n.heroSlider .arrow.prev {\r\n  left: 80px;\r\n  transform: rotate(-90deg) translateX(50%);\r\n}\r\n.heroSlider .arrow.next {\r\n  right: 80px;\r\n  transform: rotate(90deg) translateX(-50%);\r\n}\r\n.heroSlider .content h3 {\r\n  font-size: 50px;\r\n}\r\n.heroSlider .content p {\r\n  max-width: 538px;\r\n  font-size: 20px;\r\n  margin-bottom: 25px;\r\n  color: #171c26;\r\n}\r\n.heroSlider .pagination {\r\n  position: absolute;\r\n  z-index: 100;\r\n  left: 50%;\r\n  transform: translateX(-50%);\r\n  bottom: 15px;\r\n}\r\n.heroSlider .pagination button {\r\n  background: #fff;\r\n  width: 15px;\r\n  height: 5px;\r\n  margin: 0 5px;\r\n  transition: 0.5s;\r\n  opacity: 0.5;\r\n}\r\n.heroSlider .pagination button.active {\r\n  opacity: 1;\r\n  width: 30px;\r\n}\r\n\r\n@media screen and (max-width: 1800px) {\r\n  .heroSlider .content {\r\n    padding-left: 70px;\r\n  }\r\n  .heroSlider .arrow.prev {\r\n    left: 30px;\r\n  }\r\n  .heroSlider .arrow.next {\r\n    right: 30px;\r\n  }\r\n}\r\n@media screen and (max-width: 1200px) {\r\n  .heroSlider .content h3 {\r\n    font-size: 35px;\r\n  }\r\n}\r\n@media screen and (max-width: 1000px) {\r\n  .heroSlider .arrow {\r\n    top: auto;\r\n    bottom: 40px;\r\n  }\r\n  .heroSlider .arrow.prev {\r\n    left: 20px;\r\n    transform: rotate(-90deg);\r\n  }\r\n  .heroSlider .arrow.next {\r\n    right: 20px;\r\n    transform: rotate(90deg);\r\n  }\r\n  .heroSlider .content {\r\n    padding-left: 0;\r\n  }\r\n  .heroSlider {\r\n    height: 433px;\r\n  }\r\n}\r\n@media screen and (max-width: 700px) {\r\n  .heroSlider .content h3 {\r\n    font-size: 28px;\r\n  }\r\n  .heroSlider .content p {\r\n    font-size: 18px;\r\n    margin-bottom: 14px;\r\n  }\r\n  .heroSlider {\r\n    height: 310px;\r\n  }\r\n  .heroSlider .arrow {\r\n    bottom: 15px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".heroSlider {\n  position: relative;\n  height: 650px;\n  overflow: hidden;\n}\n\n.heroSlider article {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  color: #171c26;\n  transition: 1s;\n}\n.heroSlider article.lastSlide {\n  visibility: hidden;\n}\n.heroSlider article.activeSlide {\n  transform: translateX(0);\n}\n.heroSlider article.nextSlide {\n  visibility: hidden;\n}\n.heroSlider article.lastSlide .bg {\n  transform: translateX(-100%);\n}\n.heroSlider article.activeSlide .bg {\n  transform: translateX(0);\n}\n.heroSlider article.nextSlide .bg {\n  transform: translateX(100%);\n}\n.heroSlider article::after {\n  height: 350px;\n  width: 100%;\n  left: 0;\n  top: 0;\n  z-index: 0;\n  background: linear-gradient(to bottom, #ffffff69, transparent);\n}\n.heroSlider .bg {\n  position: absolute;\n  z-index: -1;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  transition: 1s;\n}\n.heroSlider .wrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: center;\n}\n.heroSlider .content {\n  transform: translateX(-80px);\n  opacity: 0;\n  visibility: hidden;\n  transition: 1.2s;\n  position: relative;\n  z-index: 10;\n}\n.heroSlider .activeSlide .content {\n  transform: translateX(0);\n  opacity: 1;\n  visibility: visible;\n}\n.heroSlider .arrow {\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  border: 2px solid transparent;\n  width: 41px;\n  height: 41px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition: 0.5s;\n}\n.heroSlider .arrow:hover {\n  border: 2px solid #1dbfcc;\n}\n.heroSlider .arrow.prev {\n  left: 80px;\n  transform: rotate(-90deg) translateX(50%);\n}\n.heroSlider .arrow.next {\n  right: 80px;\n  transform: rotate(90deg) translateX(-50%);\n}\n.heroSlider .content h3 {\n  font-size: 50px;\n}\n.heroSlider .content p {\n  max-width: 538px;\n  font-size: 20px;\n  margin-bottom: 25px;\n  color: #171c26;\n}\n.heroSlider .pagination {\n  position: absolute;\n  z-index: 100;\n  left: 50%;\n  transform: translateX(-50%);\n  bottom: 15px;\n}\n.heroSlider .pagination button {\n  background: #fff;\n  width: 15px;\n  height: 5px;\n  margin: 0 5px;\n  transition: 0.5s;\n  opacity: 0.5;\n}\n.heroSlider .pagination button.active {\n  opacity: 1;\n  width: 30px;\n}\n\n@media screen and (max-width: 1800px) {\n  .heroSlider .content {\n    padding-left: 70px;\n  }\n  .heroSlider .arrow.prev {\n    left: 30px;\n  }\n  .heroSlider .arrow.next {\n    right: 30px;\n  }\n}\n@media screen and (max-width: 1200px) {\n  .heroSlider .content h3 {\n    font-size: 35px;\n  }\n}\n@media screen and (max-width: 1000px) {\n  .heroSlider .arrow {\n    top: auto;\n    bottom: 40px;\n  }\n  .heroSlider .arrow.prev {\n    left: 20px;\n    transform: rotate(-90deg);\n  }\n  .heroSlider .arrow.next {\n    right: 20px;\n    transform: rotate(90deg);\n  }\n  .heroSlider .content {\n    padding-left: 0;\n  }\n  .heroSlider {\n    height: 433px;\n  }\n}\n@media screen and (max-width: 700px) {\n  .heroSlider .content h3 {\n    font-size: 28px;\n  }\n  .heroSlider .content p {\n    font-size: 18px;\n    margin-bottom: 14px;\n  }\n  .heroSlider {\n    height: 310px;\n  }\n  .heroSlider .arrow {\n    bottom: 15px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6078,7 +6072,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".homePage {\r\n  margin-top: -65px;\r\n}\r\n@media screen and (max-width: 1000px) {\r\n  .homePage {\r\n    margin-top: 0;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".homePage {\n  margin-top: -65px;\n}\n@media screen and (max-width: 1000px) {\n  .homePage {\n    margin-top: 0;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6102,7 +6096,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".newsHome .news_slider .arrow {\r\n  border: 2px solid transparent;\r\n  width: 41px;\r\n  height: 41px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  transition: 0.5s;\r\n  position: absolute;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n}\r\n.newsHome .news_slider .arrow:hover {\r\n  border: 2px solid #1dbfcc;\r\n}\r\n.newsHome .news_slider .arrow.prev {\r\n  transform: rotate(-90deg) translateX(50%);\r\n  left: 0;\r\n}\r\n.newsHome .news_slider .arrow.next {\r\n  transform: rotate(90deg) translateX(-50%);\r\n  right: 0;\r\n}\r\n\r\n.newsHome .news_slider {\r\n  margin: 20px 20px 60px 20px;\r\n  position: relative;\r\n}\r\n.newsHome .news_slider .news_box {\r\n  margin: 15px;\r\n  box-shadow: 0 5px 10px #26252c19;\r\n}\r\n.newsHome .news_slider .news_box .img {\r\n  width: 100%;\r\n  height: 290px;\r\n  overflow: hidden;\r\n}\r\n.newsHome .news_slider .news_box .img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n.newsHome .news_slider .news_box .content {\r\n  padding: 30px 24px;\r\n}\r\n.newsHome .news_slider .news_box .status {\r\n  color: #fff;\r\n  background-color: #1dbecb;\r\n  margin-bottom: 20px;\r\n  width: -webkit-fit-content;\r\n  width: -moz-fit-content;\r\n  width: fit-content;\r\n  padding: 4px 8px;\r\n}\r\n.newsHome .news_slider .news_box .date {\r\n  font-weight: bold;\r\n  color: #1dbecb;\r\n}\r\n.newsHome .news_slider .news_box .date img {\r\n  margin-right: 10px;\r\n}\r\n.newsHome .news_slider .news_box .caption {\r\n  font-size: 20px;\r\n  margin: 20px 0;\r\n}\r\n.newsHome .news_slider .news_box .link {\r\n  color: #1dbecb;\r\n  transition: 0.3s;\r\n}\r\n.newsHome .news_slider .news_box .link .plus {\r\n  transition: 0.3s;\r\n  width: -webkit-fit-content;\r\n  width: -moz-fit-content;\r\n  width: fit-content;\r\n  height: -webkit-fit-content;\r\n  height: -moz-fit-content;\r\n  height: fit-content;\r\n  transform-origin: center;\r\n  font-size: 20px;\r\n  display: inline-block;\r\n}\r\n\r\n.newsHome .news_slider .news_box .link:hover {\r\n  color: #db0761;\r\n}\r\n.newsHome .news_slider .news_box .link:hover .plus {\r\n  transform: rotate(90deg);\r\n}\r\n\r\n/*  carousel style */\r\n.jRFJkP,\r\n.cNNJIt {\r\n  opacity: 0 !important;\r\n  position: relative;\r\n  z-index: 100;\r\n}\r\n.gZZBOx {\r\n  display: none !important;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".newsHome .news_slider .arrow {\n  border: 2px solid transparent;\n  width: 41px;\n  height: 41px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition: 0.5s;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.newsHome .news_slider .arrow:hover {\n  border: 2px solid #1dbfcc;\n}\n.newsHome .news_slider .arrow.prev {\n  transform: rotate(-90deg) translateX(50%);\n  left: 0;\n}\n.newsHome .news_slider .arrow.next {\n  transform: rotate(90deg) translateX(-50%);\n  right: 0;\n}\n\n.newsHome .news_slider {\n  margin: 20px 20px 60px 20px;\n  position: relative;\n}\n.newsHome .news_slider .news_box {\n  margin: 15px;\n  box-shadow: 0 5px 10px #26252c19;\n}\n.newsHome .news_slider .news_box .img {\n  width: 100%;\n  height: 290px;\n  overflow: hidden;\n}\n.newsHome .news_slider .news_box .img img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.newsHome .news_slider .news_box .content {\n  padding: 30px 24px;\n}\n.newsHome .news_slider .news_box .status {\n  color: #fff;\n  background-color: #1dbecb;\n  margin-bottom: 20px;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  padding: 4px 8px;\n}\n.newsHome .news_slider .news_box .date {\n  font-weight: bold;\n  color: #1dbecb;\n}\n.newsHome .news_slider .news_box .date img {\n  margin-right: 10px;\n}\n.newsHome .news_slider .news_box .caption {\n  font-size: 20px;\n  margin: 20px 0;\n}\n.newsHome .news_slider .news_box .link {\n  color: #1dbecb;\n  transition: 0.3s;\n}\n.newsHome .news_slider .news_box .link .plus {\n  transition: 0.3s;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  transform-origin: center;\n  font-size: 20px;\n  display: inline-block;\n}\n\n.newsHome .news_slider .news_box .link:hover {\n  color: #db0761;\n}\n.newsHome .news_slider .news_box .link:hover .plus {\n  transform: rotate(90deg);\n}\n\n/*  carousel style */\n.jRFJkP,\n.cNNJIt {\n  opacity: 0 !important;\n  position: relative;\n  z-index: 100;\n}\n.gZZBOx {\n  display: none !important;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6126,7 +6120,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
+<<<<<<< HEAD
 ___CSS_LOADER_EXPORT___.push([module.id, ".serviceHome {\r\n    padding-bottom: 80px;\r\n    position: relative;\r\n    overflow: hidden;\r\n    height: 540px;\r\n}\r\n.serviceHome .wrapper {\r\n    align-items: flex-end;\r\n}\r\n.service_grid {\r\n    display: grid;\r\n    grid-template-columns: repeat(2, 1fr);\r\n    width: 100%;\r\n}\r\n.serviceHome .left {\r\n    width: 600px;\r\n    padding-right: 100px;\r\n    flex-shrink: 0;\r\n    background-color: #1dbfcc;\r\n    height: 100%;\r\n    color: #fff;\r\n    display: flex;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n    position: relative;\r\n}\r\n.serviceHome .left .main_btn {\r\n    margin-top: 20px;\r\n}\r\n.serviceHome .left .main_btn button {\r\n    background-color: #db0861;\r\n}\r\n.serviceHome .left .main_btn .plus {\r\n    background-color: #fff;\r\n    color: #db0861;\r\n}\r\n.serviceHome .left p {\r\n    margin-bottom: 20px;\r\n    font-size: 18px;\r\n    color: #fff;\r\n}\r\n.serviceHome .left h2 {\r\n    font-size: 50px;\r\n    text-transform: uppercase;\r\n    margin-bottom: 28px;\r\n}\r\n.serviceHome .left::before {\r\n    width: 100%;\r\n    height: 100%;\r\n    right: 99%;\r\n    top: 0;\r\n    background-color: #1dbfcc;\r\n    z-index: -1;\r\n}\r\n\r\n.serviceHome .right .title1 {\r\n    margin-left: 60px;\r\n}\r\n.serviceHome .right .p {\r\n    margin-left: 60px;\r\n    max-width: 430px;\r\n    margin-bottom: 25px;\r\n}\r\n\r\n@media screen and (max-width: 1550px) {\r\n    .serviceHome .left {\r\n        width: 546px;\r\n        padding-right: 31px;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 1330px) {\r\n    .serviceHome .wrapper {\r\n        flex-direction: column-reverse;\r\n    }\r\n    .serviceHome {\r\n        height: auto;\r\n    }\r\n    .serviceHome .left {\r\n        width: 100%;\r\n        height: auto;\r\n        padding: 30px 0;\r\n    }\r\n    .serviceHome .left::before {\r\n        width: 60px;\r\n    }\r\n    .serviceHome .left::after {\r\n        width: 60px;\r\n        height: 100%;\r\n        left: 99%;\r\n        top: 0;\r\n        background-color: #1dbfcc;\r\n        z-index: -1;\r\n    }\r\n}\r\n@media screen and (max-width: 1075px) {\r\n    .serviceHome {\r\n        padding-bottom: 22px;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n    .serviceHome .right .title1 {\r\n        margin-left: 0;\r\n    }\r\n    .serviceHome .right .p {\r\n        margin-left: 0;\r\n    }\r\n    .serviceHome .left h2 {\r\n        font-size: 35px;\r\n        margin-bottom: 15px;\r\n    }\r\n    .serviceHome .left p {\r\n        margin-bottom: 10px;\r\n        font-size: 16px;\r\n    }\r\n}\r\n@media screen and (max-width: 700px) {\r\n    .service_grid {\r\n        grid-template-columns: 1fr;\r\n    }\r\n    .service_box .icon {\r\n        margin-bottom: 11px;\r\n    }\r\n    .service_box .title {\r\n        font-size: 18px;\r\n        margin-bottom: 6px;\r\n    }\r\n    .serviceHome .left h2 {\r\n        font-size: 30px;\r\n        margin-bottom: 8px;\r\n    }\r\n}\r\n@media screen and (max-width: 600px) {\r\n    .serviceHome .right .title.flex {\r\n        flex-direction: column;\r\n        align-items: flex-start;\r\n        margin-bottom: 20px;\r\n    }\r\n}\r\n@media screen and (max-width: 500px) {\r\n    .service_box {\r\n        padding: 24px 17px;\r\n    }\r\n}\r\n", ""]);
+=======
+___CSS_LOADER_EXPORT___.push([module.id, ".serviceHome {\n  padding-bottom: 80px;\n  position: relative;\n  overflow: hidden;\n  height: 830px;\n}\n.serviceHome .wrapper {\n  align-items: flex-end;\n}\n.service_grid {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  width: 100%;\n}\n.serviceHome .left {\n  width: 600px;\n  padding-right: 100px;\n  flex-shrink: 0;\n  background-color: #1dbfcc;\n  height: 100%;\n  color: #fff;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  position: relative;\n}\n.serviceHome .left .main_btn {\n  margin-top: 20px;\n}\n.serviceHome .left .main_btn button {\n  background-color: #db0861;\n}\n.serviceHome .left .main_btn .plus {\n  background-color: #fff;\n  color: #db0861;\n}\n.serviceHome .left p {\n  margin-bottom: 20px;\n  font-size: 18px;\n  color: #fff;\n}\n.serviceHome .left h2 {\n  font-size: 50px;\n  text-transform: uppercase;\n  margin-bottom: 28px;\n}\n.serviceHome .left::before {\n  width: 100%;\n  height: 100%;\n  right: 99%;\n  top: 0;\n  background-color: #1dbfcc;\n  z-index: -1;\n}\n\n.serviceHome .right .title1 {\n  margin-left: 60px;\n}\n.serviceHome .right .p {\n  margin-left: 60px;\n  max-width: 430px;\n  margin-bottom: 25px;\n}\n\n@media screen and (max-width: 1550px) {\n  .serviceHome {\n    height: 920px;\n  }\n  .serviceHome .left {\n    width: 546px;\n    padding-right: 31px;\n  }\n}\n\n@media screen and (max-width: 1330px) {\n  .serviceHome .wrapper {\n    flex-direction: column-reverse;\n  }\n  .serviceHome {\n    height: auto;\n  }\n  .serviceHome .left {\n    width: 100%;\n    height: auto;\n    padding: 30px 0;\n  }\n  .serviceHome .left::before {\n    width: 60px;\n  }\n  .serviceHome .left::after {\n    width: 60px;\n    height: 100%;\n    left: 99%;\n    top: 0;\n    background-color: #1dbfcc;\n    z-index: -1;\n  }\n}\n@media screen and (max-width: 1075px) {\n  .serviceHome {\n    padding-bottom: 22px;\n  }\n}\n\n@media screen and (max-width: 900px) {\n  .serviceHome .right .title1 {\n    margin-left: 0;\n  }\n  .serviceHome .right .p {\n    margin-left: 0;\n  }\n  .serviceHome .left h2 {\n    font-size: 35px;\n    margin-bottom: 15px;\n  }\n  .serviceHome .left p {\n    margin-bottom: 10px;\n    font-size: 16px;\n  }\n}\n@media screen and (max-width: 700px) {\n  .service_grid {\n    grid-template-columns: 1fr;\n  }\n  .service_box .icon {\n    margin-bottom: 11px;\n  }\n  .service_box .title {\n    font-size: 18px;\n    margin-bottom: 6px;\n  }\n  .serviceHome .left h2 {\n    font-size: 30px;\n    margin-bottom: 8px;\n  }\n}\n@media screen and (max-width: 500px) {\n  .service_box {\n    padding: 24px 17px;\n  }\n}\n", ""]);
+>>>>>>> ed5a56fbb8ead58a079b0a6eb26714174a4556f7
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6150,7 +6148,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".newsPage .wrapper2.main {\r\n  padding-top: 70px;\r\n  align-items: flex-start;\r\n}\r\n.newsPage .news_list {\r\n  margin-bottom: 60px;\r\n}\r\n.newsPage .main .right {\r\n  width: 443px;\r\n  flex-shrink: 0;\r\n  margin-left: 43px;\r\n}\r\n.newsPage .right .img_grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  grid-gap: 16px;\r\n  margin-bottom: 50px;\r\n}\r\n.newsPage .right .img_grid img {\r\n  width: 100%;\r\n  height: 137px;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n@media screen and (max-width: 1100px) {\r\n  .newsPage .main .right {\r\n    width: 390px;\r\n    margin-left: 21px;\r\n  }\r\n  .newsPage .right .img_grid img {\r\n    height: 106px;\r\n  }\r\n  .newsPage .right .img_grid {\r\n    margin-bottom: 27px;\r\n  }\r\n  .consult_box {\r\n    min-height: 237px;\r\n  }\r\n  .consult_box h2 {\r\n    font-size: 24px;\r\n    margin-bottom: 20px;\r\n  }\r\n  .news_item .img {\r\n    height: 252px;\r\n    margin-bottom: 11px;\r\n  }\r\n  .news_item h3 {\r\n    font-size: 25px;\r\n    margin-bottom: 8px;\r\n  }\r\n  .news_item {\r\n    padding-bottom: 16px;\r\n    margin-bottom: 33px;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n  .newsPage .wrapper2.main {\r\n    flex-direction: column;\r\n  }\r\n  .newsPage .main .right {\r\n    width: 470px;\r\n    margin: auto;\r\n    margin-bottom: 40px;\r\n  }\r\n}\r\n@media screen and (max-width: 500px) {\r\n  .newsPage .main .right {\r\n    width: 100%;\r\n  }\r\n  .news_item .img {\r\n    height: 200px;\r\n  }\r\n  .news_item h3 {\r\n    font-size: 22px;\r\n    margin-bottom: 4px;\r\n  }\r\n  .newsPage .wrapper2.main {\r\n    padding-top: 39px;\r\n  }\r\n  .newsPage .right .img_grid {\r\n    grid-gap: 9px;\r\n  }\r\n  .newsPage .right .img_grid img {\r\n    height: 90px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".newsPage .wrapper2.main {\n  padding-top: 70px;\n  align-items: flex-start;\n}\n.newsPage .news_list {\n  margin-bottom: 60px;\n}\n.newsPage .main .right {\n  width: 443px;\n  flex-shrink: 0;\n  margin-left: 43px;\n}\n.newsPage .right .img_grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 16px;\n  margin-bottom: 50px;\n}\n.newsPage .right .img_grid img {\n  width: 100%;\n  height: 137px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n@media screen and (max-width: 1100px) {\n  .newsPage .main .right {\n    width: 390px;\n    margin-left: 21px;\n  }\n  .newsPage .right .img_grid img {\n    height: 106px;\n  }\n  .newsPage .right .img_grid {\n    margin-bottom: 27px;\n  }\n  .consult_box {\n    min-height: 237px;\n  }\n  .consult_box h2 {\n    font-size: 24px;\n    margin-bottom: 20px;\n  }\n  .news_item .img {\n    height: 252px;\n    margin-bottom: 11px;\n  }\n  .news_item h3 {\n    font-size: 25px;\n    margin-bottom: 8px;\n  }\n  .news_item {\n    padding-bottom: 16px;\n    margin-bottom: 33px;\n  }\n}\n\n@media screen and (max-width: 900px) {\n  .newsPage .wrapper2.main {\n    flex-direction: column;\n  }\n  .newsPage .main .right {\n    width: 470px;\n    margin: auto;\n    margin-bottom: 40px;\n  }\n}\n@media screen and (max-width: 500px) {\n  .newsPage .main .right {\n    width: 100%;\n  }\n  .news_item .img {\n    height: 200px;\n  }\n  .news_item h3 {\n    font-size: 22px;\n    margin-bottom: 4px;\n  }\n  .newsPage .wrapper2.main {\n    padding-top: 39px;\n  }\n  .newsPage .right .img_grid {\n    grid-gap: 9px;\n  }\n  .newsPage .right .img_grid img {\n    height: 90px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6174,7 +6172,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".news_item {\r\n  width: 100%;\r\n  border-bottom: #e1e1e1 1px solid;\r\n  padding-bottom: 24px;\r\n  margin-bottom: 50px;\r\n}\r\n.news_item .img {\r\n  width: 100%;\r\n  height: 375px;\r\n  margin-bottom: 17px;\r\n  overflow: hidden;\r\n}\r\n.news_item .img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n.news_item h3 {\r\n  font-size: 30px;\r\n  color: #1dbfcc;\r\n  margin-bottom: 19px;\r\n}\r\n.news_item .flex {\r\n  margin-top: 24px;\r\n  color: #1dbfcc;\r\n}\r\n.news_item .date img {\r\n  margin-right: 10px;\r\n}\r\n.news_item .more {\r\n  transition: 0.3s;\r\n}\r\n.news_item .more .plus {\r\n  transition: 0.3s;\r\n  width: -webkit-fit-content;\r\n  width: -moz-fit-content;\r\n  width: fit-content;\r\n  height: -webkit-fit-content;\r\n  height: -moz-fit-content;\r\n  height: fit-content;\r\n  transform-origin: center;\r\n  font-size: 20px;\r\n  display: inline-block;\r\n}\r\n.news_item .more:hover {\r\n  color: #db0761;\r\n}\r\n.news_item .more:hover .plus {\r\n  transform: rotate(90deg);\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".news_item {\n  width: 100%;\n  border-bottom: #e1e1e1 1px solid;\n  padding-bottom: 24px;\n  margin-bottom: 50px;\n}\n.news_item .img {\n  width: 100%;\n  height: 375px;\n  margin-bottom: 17px;\n  overflow: hidden;\n}\n.news_item .img img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.news_item h3 {\n  font-size: 30px;\n  color: #1dbfcc;\n  margin-bottom: 19px;\n}\n.news_item .flex {\n  margin-top: 24px;\n  color: #1dbfcc;\n}\n.news_item .date img {\n  margin-right: 10px;\n}\n.news_item .more {\n  transition: 0.3s;\n}\n.news_item .more .plus {\n  transition: 0.3s;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  transform-origin: center;\n  font-size: 20px;\n  display: inline-block;\n}\n.news_item .more:hover {\n  color: #db0761;\n}\n.news_item .more:hover .plus {\n  transform: rotate(90deg);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6198,7 +6196,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".ourDoctorsPage .wrapper2 {\r\n  padding-bottom: 120px;\r\n  padding-top: 30px;\r\n}\r\n.ourDoctorsPage .title3 {\r\n  font-size: 30px;\r\n}\r\n.ourDoctorsPage .title3::after {\r\n  bottom: -13px;\r\n}\r\n.ourDoctorsPage .heading {\r\n  max-width: 800px;\r\n  margin: auto;\r\n  margin-bottom: 50px;\r\n  text-align: center;\r\n}\r\n.ourDoctorsPage .grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  grid-gap: 80px 28px;\r\n}\r\n.ourDoctorsPage .grid .item .img {\r\n  width: 100%;\r\n  height: 330px;\r\n  overflow: hidden;\r\n  margin-bottom: 32px;\r\n}\r\n.ourDoctorsPage .grid .item .img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n.ourDoctorsPage .grid .item .name {\r\n  font-size: 30px;\r\n  color: #171c26;\r\n}\r\n.ourDoctorsPage .grid .item .pos {\r\n  margin: 7px 0;\r\n  color: #4accd6;\r\n  font-size: 20px;\r\n}\r\n.ourDoctorsPage .grid .item p {\r\n  opacity: 0.5;\r\n  margin-top: 12px;\r\n  text-align: justify;\r\n}\r\n\r\n@media screen and (max-width: 1100px) {\r\n  .ourDoctorsPage .grid {\r\n    grid-template-columns: repeat(3, 1fr);\r\n  }\r\n}\r\n@media screen and (max-width: 900px) {\r\n  .ourDoctorsPage .grid {\r\n    grid-gap: 46px 15px;\r\n  }\r\n  .ourDoctorsPage .grid .item .img {\r\n    height: 300px;\r\n    margin-bottom: 15px;\r\n  }\r\n  .ourDoctorsPage .grid .item .name {\r\n    font-size: 25px;\r\n  }\r\n  .ourDoctorsPage .grid .item .pos {\r\n    margin: 3px 0;\r\n    font-size: 17px;\r\n  }\r\n  .ourDoctorsPage .grid .item p {\r\n    margin-top: 8px;\r\n  }\r\n}\r\n@media screen and (max-width: 700px) {\r\n  .ourDoctorsPage .grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n}\r\n@media screen and (max-width: 470px) {\r\n  .ourDoctorsPage .grid {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  .ourDoctorsPage .grid .item .img {\r\n    height: auto;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".ourDoctorsPage .wrapper2 {\n  padding-bottom: 120px;\n  padding-top: 30px;\n}\n.ourDoctorsPage .title3 {\n  font-size: 30px;\n}\n.ourDoctorsPage .title3::after {\n  bottom: -13px;\n}\n.ourDoctorsPage .heading {\n  max-width: 800px;\n  margin: auto;\n  margin-bottom: 50px;\n  text-align: center;\n}\n.ourDoctorsPage .grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  grid-gap: 80px 28px;\n}\n.ourDoctorsPage .grid .item .img {\n  width: 100%;\n  height: 330px;\n  overflow: hidden;\n  margin-bottom: 32px;\n}\n.ourDoctorsPage .grid .item .img img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.ourDoctorsPage .grid .item .name {\n  font-size: 30px;\n  color: #171c26;\n}\n.ourDoctorsPage .grid .item .pos {\n  margin: 7px 0;\n  color: #4accd6;\n  font-size: 20px;\n}\n.ourDoctorsPage .grid .item p {\n  opacity: 0.5;\n  margin-top: 12px;\n  text-align: justify;\n}\n\n@media screen and (max-width: 1100px) {\n  .ourDoctorsPage .grid {\n    grid-template-columns: repeat(3, 1fr);\n  }\n}\n@media screen and (max-width: 900px) {\n  .ourDoctorsPage .grid {\n    grid-gap: 46px 15px;\n  }\n  .ourDoctorsPage .grid .item .img {\n    height: 300px;\n    margin-bottom: 15px;\n  }\n  .ourDoctorsPage .grid .item .name {\n    font-size: 25px;\n  }\n  .ourDoctorsPage .grid .item .pos {\n    margin: 3px 0;\n    font-size: 17px;\n  }\n  .ourDoctorsPage .grid .item p {\n    margin-top: 8px;\n  }\n}\n@media screen and (max-width: 700px) {\n  .ourDoctorsPage .grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media screen and (max-width: 470px) {\n  .ourDoctorsPage .grid {\n    grid-template-columns: 1fr;\n  }\n  .ourDoctorsPage .grid .item .img {\n    height: auto;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6246,7 +6244,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".singleNewsPage .news_list .main_img {\r\n  margin-bottom: 40px;\r\n  width: 100%;\r\n}\r\n.singleNewsPage .news_list p {\r\n  margin-bottom: 30px;\r\n}\r\n.singleNewsPage .news_list .flex {\r\n  margin-top: 60px;\r\n}\r\n.singleNewsPage .date {\r\n  color: #1dbecb;\r\n}\r\n.singleNewsPage .date img {\r\n  margin-right: 10px;\r\n}\r\n.singleNewsPage .other_news {\r\n  align-items: flex-start;\r\n  margin-bottom: 15px;\r\n  color: #778197;\r\n}\r\n.singleNewsPage .other_news .img {\r\n  width: 116px;\r\n  height: 116px;\r\n  margin-right: 16px;\r\n  border-radius: 3px;\r\n  overflow: hidden;\r\n  flex-shrink: 0;\r\n}\r\n.singleNewsPage .other_news .img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n@media screen and (max-width: 500px) {\r\n  .singleNewsPage .other_news {\r\n    font-size: 14px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".singleNewsPage .news_list .main_img {\n  margin-bottom: 40px;\n  width: 100%;\n}\n.singleNewsPage .news_list p {\n  margin-bottom: 30px;\n}\n.singleNewsPage .news_list .flex {\n  margin-top: 60px;\n}\n.singleNewsPage .date {\n  color: #1dbecb;\n}\n.singleNewsPage .date img {\n  margin-right: 10px;\n}\n.singleNewsPage .other_news {\n  align-items: flex-start;\n  margin-bottom: 15px;\n  color: #778197;\n}\n.singleNewsPage .other_news .img {\n  width: 116px;\n  height: 116px;\n  margin-right: 16px;\n  border-radius: 3px;\n  overflow: hidden;\n  flex-shrink: 0;\n}\n.singleNewsPage .other_news .img img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n@media screen and (max-width: 500px) {\n  .singleNewsPage .other_news {\n    font-size: 14px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6294,7 +6292,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main_btn {\r\n  position: relative;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  height: 50px;\r\n  width: -webkit-fit-content;\r\n  width: -moz-fit-content;\r\n  width: fit-content;\r\n  cursor: default;\r\n}\r\n.main_btn button {\r\n  height: 100%;\r\n  padding: 10px 30px;\r\n  background: #1dbfcc;\r\n  border-top-left-radius: 20px;\r\n  overflow: hidden;\r\n  color: #fff;\r\n  font-size: 20px;\r\n  position: relative;\r\n  cursor: pointer;\r\n}\r\n.main_btn button span {\r\n  z-index: 10;\r\n  position: relative;\r\n}\r\n.main_btn button::after {\r\n  width: 100%;\r\n  height: 100%;\r\n  top: 0;\r\n  left: 0;\r\n  background: #db0761;\r\n  transform: scaleX(0);\r\n  transform-origin: left;\r\n  transition: 0.3s;\r\n}\r\n.main_btn .plus {\r\n  height: 100%;\r\n  width: 50px;\r\n  background: #4accd6;\r\n  color: #fff;\r\n  font-size: 27px;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n}\r\n.main_btn:hover button::after {\r\n  transform: scaleX(1);\r\n}\r\n.main_btn:hover .plus {\r\n  background: #fff;\r\n  color: #db0761;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".main_btn {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  height: 50px;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  cursor: default;\n}\n.main_btn button {\n  height: 100%;\n  padding: 10px 30px;\n  background: #1dbfcc;\n  border-top-left-radius: 20px;\n  overflow: hidden;\n  color: #fff;\n  font-size: 20px;\n  position: relative;\n  cursor: pointer;\n}\n.main_btn button span {\n  z-index: 10;\n  position: relative;\n}\n.main_btn button::after {\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: #db0761;\n  transform: scaleX(0);\n  transform-origin: left;\n  transition: 0.3s;\n}\n.main_btn .plus {\n  height: 100%;\n  width: 50px;\n  background: #4accd6;\n  color: #fff;\n  font-size: 27px;\n  cursor: pointer;\n  transition: 0.3s;\n}\n.main_btn:hover button::after {\n  transform: scaleX(1);\n}\n.main_btn:hover .plus {\n  background: #fff;\n  color: #db0761;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6318,7 +6316,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".pageHead {\r\n  background-color: #f7f7f7;\r\n  width: 100%;\r\n  padding: 30px 0;\r\n}\r\n.pageHead h2 {\r\n  font-size: 42px;\r\n}\r\n.pageHead span {\r\n  padding: 0 10px;\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n  .pageHead h2 {\r\n    font-size: 33px;\r\n  }\r\n  .pageHead {\r\n    padding: 18px 0;\r\n  }\r\n}\r\n@media screen and (max-width: 550px) {\r\n  .pageHead h2 {\r\n    font-size: 26px;\r\n  }\r\n  .pageHead {\r\n    padding: 11px 0;\r\n  }\r\n  .pageHead .path {\r\n    font-size: 14px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".pageHead {\n  background-color: #f7f7f7;\n  width: 100%;\n  padding: 30px 0;\n}\n.pageHead h2 {\n  font-size: 42px;\n}\n.pageHead span {\n  padding: 0 10px;\n}\n\n@media screen and (max-width: 800px) {\n  .pageHead h2 {\n    font-size: 33px;\n  }\n  .pageHead {\n    padding: 18px 0;\n  }\n}\n@media screen and (max-width: 550px) {\n  .pageHead h2 {\n    font-size: 26px;\n  }\n  .pageHead {\n    padding: 11px 0;\n  }\n  .pageHead .path {\n    font-size: 14px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6342,7 +6340,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".pagination .pageNum {\r\n  font-size: 20px;\r\n  margin: 0 8px;\r\n  opacity: 0.3;\r\n  color: #171c26;\r\n}\r\n.pagination .pageNum.active {\r\n  opacity: 1;\r\n}\r\n.pagination .arrow {\r\n  margin: 0 5px;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".pagination .pageNum {\n  font-size: 20px;\n  margin: 0 8px;\n  opacity: 0.3;\n  color: #171c26;\n}\n.pagination .pageNum.active {\n  opacity: 1;\n}\n.pagination .arrow {\n  margin: 0 5px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6366,7 +6364,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".service_box {\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 30px 60px;\r\n  border-bottom-right-radius: 60px;\r\n  position: relative;\r\n  overflow: hidden;\r\n}\r\n\r\n.service_box::after {\r\n  width: 100%;\r\n  height: 100%;\r\n  left: 0;\r\n  top: 0;\r\n  transition: 0.4s;\r\n  background-color: #db0761;\r\n  transform: translate(-100%, -100%);\r\n  border-bottom-right-radius: 60px;\r\n  z-index: 0;\r\n}\r\n.service_box .icon {\r\n  width: 50px;\r\n  height: 50px;\r\n  margin-bottom: 18px;\r\n  background-color: #fff;\r\n  z-index: 10;\r\n  position: relative;\r\n  box-shadow: 0 0 10px #21262d17;\r\n}\r\n.service_box .title {\r\n  color: #171c26;\r\n  font-size: 20px;\r\n  margin-bottom: 21px;\r\n  z-index: 10;\r\n  transition: 0.4s;\r\n  position: relative;\r\n}\r\n.service_box .para {\r\n  color: #778197;\r\n  z-index: 10;\r\n  transition: 0.4s;\r\n  position: relative;\r\n}\r\n.service_box:hover::after {\r\n  transform: translate(0, 0);\r\n}\r\n.service_box:hover .title {\r\n  color: #fff;\r\n}\r\n.service_box:hover .para {\r\n  color: #fff;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".service_box {\n  width: 100%;\n  height: 100%;\n  padding: 30px 60px;\n  border-bottom-right-radius: 60px;\n  position: relative;\n  overflow: hidden;\n}\n\n.service_box::after {\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  transition: 0.4s;\n  background-color: #db0761;\n  transform: translate(-100%, -100%);\n  border-bottom-right-radius: 60px;\n  z-index: 0;\n}\n.service_box .icon {\n  width: 50px;\n  height: 50px;\n  margin-bottom: 18px;\n  background-color: #fff;\n  z-index: 10;\n  position: relative;\n  box-shadow: 0 0 10px #21262d17;\n}\n.service_box .title {\n  color: #171c26;\n  font-size: 20px;\n  margin-bottom: 21px;\n  z-index: 10;\n  transition: 0.4s;\n  position: relative;\n}\n.service_box .para {\n  color: #778197;\n  z-index: 10;\n  transition: 0.4s;\n  position: relative;\n}\n.service_box:hover::after {\n  transform: translate(0, 0);\n}\n.service_box:hover .title {\n  color: #fff;\n}\n.service_box:hover .para {\n  color: #fff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6390,7 +6388,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".title1 {\r\n  margin-bottom: 10px;\r\n}\r\n.title1 h1 {\r\n  color: #efefef;\r\n  font-size: 100px;\r\n}\r\n.title1 p {\r\n  color: #1dbfcc;\r\n  font-size: 30px;\r\n  margin-top: -30px;\r\n}\r\n\r\n.title2 {\r\n  font-size: 45px;\r\n  color: #171c26;\r\n  position: relative;\r\n  margin-bottom: 35px;\r\n}\r\n.title2::after {\r\n  background: #1dbfcc;\r\n  width: 38px;\r\n  height: 3px;\r\n  left: 0;\r\n  bottom: 0px;\r\n}\r\n\r\n.title3 {\r\n  position: relative;\r\n  color: #171c26;\r\n  text-align: center;\r\n  margin-bottom: 30px;\r\n}\r\n.title3::after {\r\n  left: 50%;\r\n  bottom: -6px;\r\n  background: #1dbfcc;\r\n  width: 38px;\r\n  height: 3px;\r\n  transform: translateX(-50%);\r\n}\r\n\r\n@media screen and (max-width: 1300px) {\r\n  .title1 h1 {\r\n    font-size: 85px;\r\n  }\r\n}\r\n@media screen and (max-width: 1000px) {\r\n  .title2 {\r\n    font-size: 35px;\r\n    margin-bottom: 22px;\r\n  }\r\n}\r\n@media screen and (max-width: 700px) {\r\n  .title1 h1 {\r\n    color: #efefef;\r\n    font-size: 70px;\r\n  }\r\n}\r\n@media screen and (max-width: 500px) {\r\n  .title1 p {\r\n    color: #1dbfcc;\r\n    font-size: 27px;\r\n    margin-top: -25px;\r\n  }\r\n  .title1 h1 {\r\n    color: #efefef;\r\n    font-size: 55px;\r\n  }\r\n  .title2 {\r\n    font-size: 30px;\r\n    margin-bottom: 14px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".title1 {\n  margin-bottom: 10px;\n}\n.title1 h1 {\n  color: #efefef;\n  font-size: 100px;\n}\n.title1 p {\n  color: #1dbfcc;\n  font-size: 30px;\n  margin-top: -30px;\n}\n\n.title2 {\n  font-size: 45px;\n  color: #171c26;\n  position: relative;\n  margin-bottom: 35px;\n}\n.title2::after {\n  background: #1dbfcc;\n  width: 38px;\n  height: 3px;\n  left: 0;\n  bottom: 0px;\n}\n\n.title3 {\n  position: relative;\n  color: #171c26;\n  text-align: center;\n  margin-bottom: 30px;\n}\n.title3::after {\n  left: 50%;\n  bottom: -6px;\n  background: #1dbfcc;\n  width: 38px;\n  height: 3px;\n  transform: translateX(-50%);\n}\n\n@media screen and (max-width: 1300px) {\n  .title1 h1 {\n    font-size: 85px;\n  }\n}\n@media screen and (max-width: 1000px) {\n  .title2 {\n    font-size: 35px;\n    margin-bottom: 22px;\n  }\n}\n@media screen and (max-width: 700px) {\n  .title1 h1 {\n    color: #efefef;\n    font-size: 70px;\n  }\n}\n@media screen and (max-width: 500px) {\n  .title1 p {\n    color: #1dbfcc;\n    font-size: 27px;\n    margin-top: -25px;\n  }\n  .title1 h1 {\n    color: #efefef;\n    font-size: 55px;\n  }\n  .title2 {\n    font-size: 30px;\n    margin-bottom: 14px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6673,7 +6671,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/calendar.svg?6af52be160da6378b4bff425a0a84c4b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/calendar.svg?d2796da6145e92a4deedf1bfcf4037dd");
 
 /***/ }),
 

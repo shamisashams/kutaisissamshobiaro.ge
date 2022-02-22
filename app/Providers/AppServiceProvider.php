@@ -12,6 +12,7 @@ use App\Breadcrumbs\Breadcrumbs;
 use App\Models\Language;
 use App\Observers\LanguageObserver;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -37,6 +38,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if($this->app->environment('production')) {
+            URL::forceScheme('https');
+        }
+
         Language::observe(LanguageObserver::class);
 
         Request::macro('breadcrumbs',function () {
