@@ -62,9 +62,9 @@ const AboutUs = () => {
                               უამრავია, თუმცა არსებობს რამდენიმე ძირითად.
                           </p>
                           <div className="checks">
-                              {checkList.map((item) => {
+                              {checkList.map((item, index) => {
                                   return (
-                                      <div className="item">
+                                      <div key={index} className="item">
                     <span>
                       <img src="/img/icons/service/check.svg" alt="" />
                     </span>
@@ -130,9 +130,10 @@ const AboutUs = () => {
                           </p>
                       </div>
                       <div className="grid" data-aos="fade-left">
-                          {serviceBoxData.map((box) => {
+                          {serviceBoxData.map((box,index) => {
                               return (
                                   <ServiceBox
+                                      index={index}
                                       icon={box.icon}
                                       title={box.title}
                                       paragraph={box.para}

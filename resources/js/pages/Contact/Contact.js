@@ -6,13 +6,13 @@ import {
   Mail,
   Location,
 } from "/img/icons/contact/contactIcons";
-import { Map } from "../../components/Map/Map.js";
 import { MainBtn } from "../../components/MainBtn/MainBtn";
 import { PageHead } from "../../components/PageHead/PageHead";
 import { Title2 } from "../../components/Titles/Titles";
 import "./Contact.css";
 import Layout from "../../Layouts/Layout";
 import {usePage} from "@inertiajs/inertia-react";
+import {Map} from "@/components/Map/Map";
 
 const Contact = () => {
     const { errors, gphone, gemail, gaddress } = usePage().props
@@ -86,9 +86,9 @@ const Contact = () => {
                               დეველოპერის ან დიზაინერის ყოველდღიურ საქმიანობაში ხშირად არის
                               ხოლმე საჭირო ისეთი ამოცანების მარტივად შესრულება,
                           </p>
-                          {contactInfo.map((info) => {
+                          {contactInfo.map((info,index) => {
                               return (
-                                  <div className="flex contact_info">
+                                  <div key={index} className="flex contact_info">
                                       <div className="icon flex centered">{info.icon}</div>
                                       <div>
                                           <div className="txt">{info.text}</div>

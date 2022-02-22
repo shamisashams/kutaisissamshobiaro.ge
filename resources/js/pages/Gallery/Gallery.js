@@ -63,9 +63,9 @@ const Gallery = () => {
               <PageHead title="გალერეა" prev="მთავარი" active="გალერეა" />
               <div className="wrapper main ">
                   <div className="grid">
-                      {photos.map((photo) => {
+                      {photos.map((photo,index) => {
                           return (
-                              <div className="img" style={{ gridColumn: `span ${photo.span}` }}>
+                              <div key={index} className="img" style={{ gridColumn: `span ${photo.span}` }}>
                                   <img src={photo.img} alt="" />
                               </div>
                           );

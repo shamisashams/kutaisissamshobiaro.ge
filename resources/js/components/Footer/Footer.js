@@ -1,6 +1,5 @@
 import React from "react";
 // import { Link, useLocation } from "react-router-dom";
-import {Map} from "../Map/Map";
 import {SocialMedia} from "../SocialMedia/SocialMedia";
 import {Link, usePage} from '@inertiajs/inertia-react';
 
@@ -11,6 +10,7 @@ import {
   Location,
 } from "/img/icons/contact/contactIcons";
 import "./Footer.css";
+import {Map} from "@/components/Map/Map";
 
 const Footer = () => {
     const {gphone, gemail, gaddress,pathname } = usePage().props
@@ -70,11 +70,13 @@ const Footer = () => {
                 </div>
                 <div className="content flex">
                     <div className="navs">
-                        {navbar.map((nav) => {
+                        {navbar.map((nav,index) => {
                             return (
-                                <Link className="nav_link" href={nav.link}>
-                                    {nav.nav}
-                                </Link>
+                                <div key={index}>
+                                    <Link className="nav_link" href={nav.link}>
+                                        {nav.nav}
+                                    </Link>
+                                </div>
                             );
                         })}
                     </div>

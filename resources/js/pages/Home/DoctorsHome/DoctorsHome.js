@@ -36,9 +36,9 @@ const DoctorsHome = () => {
           ტიპოგრაფიული ნაწარმის
         </p>
         <div className="checks">
-          {checks.map((item, i) => {
+          {checks.map((item, index) => {
             return (
-              <p>
+              <p key={index}>
                 <span>
                   <img src="/img/icons/service/check.svg" alt="" />
                 </span>

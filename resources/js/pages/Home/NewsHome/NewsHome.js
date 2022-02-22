@@ -37,9 +37,9 @@ const NewsHome = ({news}) => {
           <ArrowDown color="#1dbfcc" />
         </button>
         <Carousel breakPoints={breakPoints}>
-          {news.map((item) => {
+          {news.map((item, index) => {
             return (
-              <div className="news_box">
+              <div key={index} className="news_box">
                 <div className="img">
                   <img src={"/"+item.file.path+"/"+item.file.title} alt="" />
                 </div>

@@ -85,9 +85,9 @@ const OurDoctors = () => {
                       </p>
                   </div>
                   <div className="grid">
-                      {doctors.map((doctor) => {
+                      {doctors.map((doctor, index) => {
                           return (
-                              <div className="item">
+                              <div key={index} className="item">
                                   <div className="img">
                                       <img src={doctor.img} alt="" />
                                   </div>

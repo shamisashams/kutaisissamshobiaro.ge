@@ -85,16 +85,18 @@ const Header = () => {
                 style={{background: transparent ? "transparent" : "#fff"}}
             >
                 <div className="wrapper navigation flex centered">
-                    {navbar.map((nav) => {
+                    {navbar.map((nav,index) => {
                         return (
-                            <Link
-                                className={
-                                    nav.link === pathname ? "nav_link active" : "nav_link"
-                                }
-                                href={nav.link}
-                            >
-                                {nav.nav}
-                            </Link>
+                            <div key={index}>
+                                <Link
+                                    className={
+                                        nav.link === pathname ? "nav_link active" : "nav_link"
+                                    }
+                                    href={nav.link}
+                                >
+                                    {nav.nav}
+                                </Link>
+                            </div>
                         );
                     })}
                     {/*<div className="languages">*/}

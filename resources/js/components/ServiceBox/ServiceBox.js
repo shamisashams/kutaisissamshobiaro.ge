@@ -3,7 +3,7 @@ import "./ServiceBox.css";
 
 export const ServiceBox = (props) => {
   return (
-    <div className="service_box" style={{ background: props.background }}>
+    <div key={props.index} className="service_box" style={{ background: props.background }}>
       <div className="icon flex centered">
         <img src={props.icon} alt="" />
       </div>

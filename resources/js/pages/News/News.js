@@ -17,9 +17,10 @@ const News = ({news}) => {
                 <PageHead title="სიახლეები" prev="მთავარი" active="სიახლეები"/>
                 <div className="wrapper2 flex main">
                     <div className="news_list">
-                        {newsData.map((item) => {
+                        {newsData.map((item, index) => {
                             return (
                                 <NewsItem
+                                    key={index}
                                     imgSrc={item.file ? "/" + item.file.path + "/" + item.file.title : ""}
                                     title={item.title}
                                     paragraph={item.short_description}
