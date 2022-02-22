@@ -34,6 +34,10 @@ class HomeController extends Controller
     {
         return Inertia::render('OurDoctors/OurDoctors');
     }
+    public function services()
+    {
+        return Inertia::render('Services/Services');
+    }
 
 
 
