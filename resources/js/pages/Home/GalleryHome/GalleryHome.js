@@ -45,9 +45,10 @@ const GalleryHome = () => {
         <div className="GalleryHome wrapper">
             <Title1 largeText="ფოტო გალერეა" />
             <div className="photo_grid" data-aos="fade-up">
-                {images.map((img) => {
+                {images.map((img,index) => {
                     return (
                         <div
+                            key={index}
                             className="img"
                             style={{ gridColumn: `span ${img.span}` }}
                         >

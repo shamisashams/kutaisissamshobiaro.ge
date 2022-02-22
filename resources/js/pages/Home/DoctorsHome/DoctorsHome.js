@@ -38,7 +38,7 @@ const DoctorsHome = () => {
                 <div className="checks">
                     {checks.map((item, i) => {
                         return (
-                            <p>
+                            <p key={i}>
                                 <span>
                                     <img
                                         src="/img/icons/service/check.svg"

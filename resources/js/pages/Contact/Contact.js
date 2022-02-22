@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Inertia } from "@inertiajs/inertia";
 
 import { Call, Mail, Location } from "/img/icons/contact/contactIcons";
-import { Map } from "../../components/Map/Map.js";
 import { MainBtn } from "../../components/MainBtn/MainBtn";
 import { PageHead } from "../../components/PageHead/PageHead";
 import { Title2 } from "../../components/Titles/Titles";
 import "./Contact.css";
 import Layout from "../../Layouts/Layout";
 import { usePage } from "@inertiajs/inertia-react";
+import {Map} from "@/components/Map/Map";
 
 const Contact = () => {
     const { errors, gphone, gemail, gaddress } = usePage().props;

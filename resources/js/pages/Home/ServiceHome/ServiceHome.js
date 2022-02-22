@@ -55,9 +55,10 @@ const ServiceHome = () => {
                         და ამბულატორიულ მომსახურებას.
                     </p>
                     <div className="service_grid" data-aos="fade-left">
-                        {serviceBoxData.map((box) => {
+                        {serviceBoxData.map((box, index) => {
                             return (
                                 <ServiceBox
+                                    index={index}
                                     icon={box.icon}
                                     title={box.title}
                                     paragraph={box.para}

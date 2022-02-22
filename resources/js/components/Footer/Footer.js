@@ -1,6 +1,5 @@
 import React from "react";
 // import { Link, useLocation } from "react-router-dom";
-import { Map } from "../Map/Map";
 import { SocialMedia } from "../SocialMedia/SocialMedia";
 import { Link, usePage } from "@inertiajs/inertia-react";
 
