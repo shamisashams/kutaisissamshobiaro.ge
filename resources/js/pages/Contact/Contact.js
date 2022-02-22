@@ -1,27 +1,14 @@
 import React, { useState } from "react";
 import { Inertia } from "@inertiajs/inertia";
 
-<<<<<<< HEAD
 import { Call, Mail, Location } from "/img/icons/contact/contactIcons";
 import { Map } from "../../components/Map/Map.js";
-=======
-import {
-  Call,
-  Mail,
-  Location,
-} from "/img/icons/contact/contactIcons";
->>>>>>> ed5a56fbb8ead58a079b0a6eb26714174a4556f7
 import { MainBtn } from "../../components/MainBtn/MainBtn";
 import { PageHead } from "../../components/PageHead/PageHead";
 import { Title2 } from "../../components/Titles/Titles";
 import "./Contact.css";
 import Layout from "../../Layouts/Layout";
-<<<<<<< HEAD
 import { usePage } from "@inertiajs/inertia-react";
-=======
-import {usePage} from "@inertiajs/inertia-react";
-import {Map} from "@/components/Map/Map";
->>>>>>> ed5a56fbb8ead58a079b0a6eb26714174a4556f7
 
 const Contact = () => {
     const { errors, gphone, gemail, gaddress } = usePage().props;
