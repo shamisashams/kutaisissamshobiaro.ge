@@ -41,9 +41,9 @@ Route::prefix('{locale?}')
 
                 Route::redirect('', '/admin/news',);
 
-                // Language
-                Route::resource('language', LanguageController::class);
-                Route::get('language/{language}/destroy', [LanguageController::class, 'destroy'])->name('language.destroy');
+//                // Language
+//                Route::resource('language', LanguageController::class);
+//                Route::get('language/{language}/destroy', [LanguageController::class, 'destroy'])->name('language.destroy');
 //
 //                // Translation
 //                Route::resource('translation', TranslationController::class);
