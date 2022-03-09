@@ -10,7 +10,7 @@ import Layout from "../../Layouts/Layout";
 import { usePage } from "@inertiajs/inertia-react";
 import {Map} from "@/components/Map/Map";
 
-const Contact = () => {
+const Contact = ({seo}) => {
     const { errors, gphone, gemail, gaddress } = usePage().props;
 
     const contactInfo = [
@@ -52,7 +52,7 @@ const Contact = () => {
         Inertia.post(route("client.contact.mail"), values);
     }
     return (
-        <Layout>
+        <Layout seo={seo}>
             <div className="contactPage">
                 <PageHead title="კონტაქტი" prev="მთავარი" active="კონტაქტი" />
                 <div className="wrapper main">

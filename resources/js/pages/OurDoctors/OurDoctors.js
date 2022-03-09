@@ -4,7 +4,7 @@ import { Title3 } from "../../components/Titles/Titles";
 import Layout from "../../Layouts/Layout";
 import "./OurDoctors.css";
 
-const OurDoctors = () => {
+const OurDoctors = ({seo}) => {
     const doctors = [
         {
             img: "/img/doctors/3.png",
@@ -39,7 +39,7 @@ const OurDoctors = () => {
         },
     ];
     return (
-        <Layout>
+        <Layout seo={seo}>
             <div className="ourDoctorsPage">
                 <PageHead
                     title="ჩვენი ექიმები"

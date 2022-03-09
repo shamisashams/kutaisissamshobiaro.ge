@@ -4,7 +4,7 @@ import { PageHead } from "../../components/PageHead/PageHead";
 import { ServiceBox } from "../../components/ServiceBox/ServiceBox";
 import "./Services.css";
 
-const Services = () => {
+const Services = ({seo}) => {
     const boxList = [
         {
             icon: "/img/icons/service/5.png",
@@ -78,7 +78,7 @@ const Services = () => {
         },
     ];
     return (
-        <Layout>
+        <Layout seo={seo}>
             <div className="servicePage">
                 <PageHead title="სერვისი" prev="მთავარი" active="სერვისი" />
                 <div className="head ">

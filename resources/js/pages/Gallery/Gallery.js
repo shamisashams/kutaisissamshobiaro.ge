@@ -5,7 +5,7 @@ import "./Gallery.css";
 import { Pagination } from "../../components/Pagination/Pagination";
 import Layout from "../../Layouts/Layout";
 
-const Gallery = () => {
+const Gallery = ({seo}) => {
   const photos = [
     {
       img: "/img/gallery/1.png",
@@ -58,7 +58,7 @@ const Gallery = () => {
     },
   ];
   return (
-      <Layout>
+      <Layout seo={seo}>
           <div className="galleryPage">
               <PageHead title="გალერეა" prev="მთავარი" active="გალერეა" />
               <div className="wrapper main ">

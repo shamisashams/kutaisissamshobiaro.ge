@@ -8,8 +8,7 @@ import "./SingleNews.css";
 import Layout from "../../Layouts/Layout";
 
 
-const SingleNews = ({news, lastNews}) => {
-    console.log(lastNews)
+const SingleNews = ({news, lastNews, seo}) => {
     const otherNews = [
         {
             img: "/img/news/5.png",
@@ -28,7 +27,7 @@ const SingleNews = ({news, lastNews}) => {
         },
     ];
     return (
-        <Layout>
+        <Layout seo={seo}>
             <div className="newsPage singleNewsPage">
                 <PageHead
                     title="ახალი N2 სამშობიარო სახლი"

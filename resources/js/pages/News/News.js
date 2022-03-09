@@ -8,11 +8,11 @@ import "./News.css";
 import {Pagination} from "../../components/Pagination/Pagination";
 import Layout from "../../Layouts/Layout";
 
-const News = ({news}) => {
+const News = ({news, seo}) => {
     const newsData = news.data;
     const imgGrid = ["/img/news/6.png", "/img/news/5.png", "/img/news/4.png", "/img/news/1.png", "/img/news/3.png", "/img/news/6.png"];
     return (
-        <Layout>
+        <Layout seo={seo}>
             <div className="newsPage">
                 <PageHead title="სიახლეები" prev="მთავარი" active="სიახლეები"/>
                 <div className="wrapper2 flex main">

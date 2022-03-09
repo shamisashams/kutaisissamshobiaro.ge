@@ -176,6 +176,18 @@ trait ScopeFilter
 
     /**
      * @param $query
+     * @param $meta_title
+     * @return mixed
+     */
+    public function scopeMetaTitleTranslation($query, $meta_title)
+    {
+        return $query->whereHas('translations', function ($query) use ($meta_title) {
+            return $query->where('meta_title', 'like', '%' . $meta_title . '%');
+        });
+    }
+
+    /**
+     * @param $query
      * @param $value
      * @return mixed
      */

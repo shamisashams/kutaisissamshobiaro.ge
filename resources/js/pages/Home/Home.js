@@ -9,12 +9,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Layout from "../../Layouts/Layout";
 
-const Home = ({news}) => {
+const Home = ({news, seo}) => {
     useEffect(() => {
         Aos.init({duration: 2000});
     }, []);
     return (
-        <Layout>
+        <Layout seo={seo}>
             <div className="homePage">
                 <HeroSlider/>
                 <ServiceHome/>

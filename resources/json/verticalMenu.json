@@ -14,6 +14,20 @@
             "i18n": "setting",
             "icon": "language",
             "slug": "setting"
+        },
+        {
+            "url": "page.index",
+            "name": "page",
+            "i18n": "page",
+            "icon": "language",
+            "slug": "page"
+        },
+        {
+            "url": "language.index",
+            "name": "language",
+            "i18n": "language",
+            "icon": "language",
+            "slug": "language"
         }
     ],
     "_comment": [
@@ -46,13 +60,6 @@
             "slug": "service"
         },
         {
-            "url": "page.index",
-            "name": "page",
-            "i18n": "page",
-            "icon": "language",
-            "slug": "page"
-        },
-        {
             "url": "certificate.index",
             "name": "certificate",
             "i18n": "certificate",
@@ -65,13 +72,6 @@
             "i18n": "slider",
             "icon": "language",
             "slug": "slider"
-        },
-        {
-            "url": "language.index",
-            "name": "language",
-            "i18n": "language",
-            "icon": "language",
-            "slug": "language"
         },
         {
             "url": "translation.index",

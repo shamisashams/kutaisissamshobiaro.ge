@@ -41,9 +41,9 @@ Route::prefix('{locale?}')
 
                 Route::redirect('', '/admin/news',);
 
-//                // Language
-//                Route::resource('language', LanguageController::class);
-//                Route::get('language/{language}/destroy', [LanguageController::class, 'destroy'])->name('language.destroy');
+                // Language
+                Route::resource('language', LanguageController::class);
+                Route::get('language/{language}/destroy', [LanguageController::class, 'destroy'])->name('language.destroy');
 //
 //                // Translation
 //                Route::resource('translation', TranslationController::class);
@@ -68,9 +68,9 @@ Route::prefix('{locale?}')
 //                Route::resource('slider', SliderController::class);
 //                Route::get('slider/{slider}/destroy', [SliderController::class, 'destroy'])->name('slider.destroy');
 //
-//                // Page
-//                Route::resource('page', PageController::class);
-//                Route::get('page/{page}/destroy', [PageController::class, 'destroy'])->name('page.destroy');
+                // Page
+                Route::resource('page', PageController::class);
+                Route::get('page/{page}/destroy', [PageController::class, 'destroy'])->name('page.destroy');
 
                 // Setting
                 Route::resource('setting', SettingController::class);

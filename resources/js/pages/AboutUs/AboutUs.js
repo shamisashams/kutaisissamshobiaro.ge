@@ -9,7 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Layout from "../../Layouts/Layout";
 
-const AboutUs = () => {
+const AboutUs = ({seo}) => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -29,7 +29,7 @@ const AboutUs = () => {
         },
     ];
     return (
-        <Layout>
+        <Layout seo={seo}>
             <div className="aboutPage">
                 <PageHead
                     title="ჩვენ შესახებ"

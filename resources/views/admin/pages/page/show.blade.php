@@ -67,14 +67,14 @@
                                  class="">
                                 <table class="striped">
                                     <tbody>
-                                    <tr>
-                                        <td>@lang('admin.title'):</td>
-                                        <td>{{$page->translate($locale)->title ?? ''}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>@lang('admin.description'):</td>
-                                        <td>{{$page->translate($locale)->description ?? ''}}</td>
-                                    </tr>
+{{--                                    <tr>--}}
+{{--                                        <td>@lang('admin.title'):</td>--}}
+{{--                                        <td>{{$page->translate($locale)->title ?? ''}}</td>--}}
+{{--                                    </tr>--}}
+{{--                                    <tr>--}}
+{{--                                        <td>@lang('admin.description'):</td>--}}
+{{--                                        <td>{{$page->translate($locale)->description ?? ''}}</td>--}}
+{{--                                    </tr>--}}
                                     <tr>
                                         <td>@lang('admin.meta_title'):</td>
                                         <td>{{$page->translate($locale)->meta_title ?? ''}}</td>
@@ -82,6 +82,18 @@
                                     <tr>
                                         <td>@lang('admin.meta_description'):</td>
                                         <td>{{$page->translate($locale)->meta_description ?? ''}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@lang('admin.meta_keyword'):</td>
+                                        <td>{{$page->translate($locale)->meta_keyword ?? ''}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@lang('admin.meta_og_title'):</td>
+                                        <td>{{$page->translate($locale)->meta_og_title ?? ''}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@lang('admin.meta_og_description'):</td>
+                                        <td>{{$page->translate($locale)->meta_og_description ?? ''}}</td>
                                     </tr>
                                     </tbody>
                                 </table>

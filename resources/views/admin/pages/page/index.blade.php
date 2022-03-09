@@ -20,7 +20,7 @@
                                     <tr>
                                         <th>@lang('admin.id')</th>
                                         <th>@lang('admin.key')</th>
-                                        <th>@lang('admin.title')</th>
+                                        <th>@lang('admin.meta_title')</th>
                                         <th>@lang('admin.actions')</th>
                                     </tr>
                                     </thead>
@@ -36,9 +36,9 @@
                                                    class="validate {{$errors->has('key') ? '' : 'valid'}}">
                                         </th>
                                         <th>
-                                            <input type="text" name="title" onchange="this.form.submit()"
-                                                   value="{{Request::get('title')}}"
-                                                   class="validate {{$errors->has('title') ? '' : 'valid'}}">
+                                            <input type="text" name="meta_title" onchange="this.form.submit()"
+                                                   value="{{Request::get('meta_title')}}"
+                                                   class="validate {{$errors->has('meta_title') ? '' : 'valid'}}">
                                         </th>
                                     </tr>
                                     <tbody>
@@ -64,7 +64,7 @@
                                                             @foreach(config('translatable.locales') as $locale)
                                                                 <div id="cat-{{$locale}}-{{$page->id}}"
                                                                      class="">
-                                                                    {{$page->translate($locale)->title ?? ''}}
+                                                                    {{$page->translate($locale)->meta_title ?? ''}}
                                                                 </div>
                                                             @endforeach
                                                         </div>
