@@ -73,15 +73,15 @@ const Header = () => {
                         <div className="contact_info">
                             <Link href="/contact">
                                 <Call color="#fff" />
-                                {gphone.value}
+                                599 563 872
                             </Link>
                             <Link href="/contact">
                                 <Mail color="#fff" />
-                                {gemail.value}
+                                2_samshobiaro@mail.ru
                             </Link>
                             <Link href="/contact">
                                 <Location color="#fff" />
-                                {gaddress.value}
+                                ქუთაისი, ლორთქიფანიძის ქუჩა №13
                             </Link>
                         </div>
                     </div>

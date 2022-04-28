@@ -46,6 +46,10 @@ const Footer = () => {
             nav: "კონტაქტი",
             link: route("client.contact.index"),
         },
+        {
+            nav: "რჩევები",
+            link: route("client.tips.index"),
+        },
     ];
     return (
         <div className="footer">
@@ -72,7 +76,7 @@ const Footer = () => {
                     <SocialMedia color="#171C26" />
                 </div>
                 <div className="content flex">
-                    <div className="navs">
+                    <div className="navs flex">
                         {navbar.map((nav, index) => {
                             return (
                                 <div key={index}>
@@ -87,15 +91,15 @@ const Footer = () => {
                         <h2>საკონტაქტო ინფორმაცია</h2>
                         <Link href="/">
                             <Call color="#171C26" />
-                            {gphone.value}
+                            599 563 872
                         </Link>
                         <Link href="/">
                             <Mail color="#171C26" />
-                            {gemail.value}
+                            2_samshobiaro@mail.ru
                         </Link>
                         <Link href="/">
                             <Location color="#171C26" />
-                            {gaddress.value}
+                            ქუთაისი, ლორთქიფანიძის ქუჩა №13
                         </Link>
                     </div>
                 </div>

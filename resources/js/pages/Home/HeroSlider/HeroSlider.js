@@ -7,7 +7,7 @@ import { MainBtn } from "../../../components/MainBtn/MainBtn";
 import "./HeroSlider.css";
 
 const HeroSlider = () => {
-    const images = ["/img/hero/1.png", "/img/hero/2.png", "/img/hero/3.png"];
+    const images = ["/img/hero/1.png", "/img/hero/2.png", "/img/hero/bg_2.jpg"];
 
     const [index, setIndex] = useState(0);
 

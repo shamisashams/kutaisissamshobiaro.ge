@@ -61,6 +61,9 @@
     margin-top: 12px;
     text-align: justify;
 }
+.single-doc {
+    color: #171c26;
+}
 .single-doc .wrapper2 {
     width: 800px;
 }
@@ -70,6 +73,9 @@
     max-width: 400px;
     height: auto;
     text-align: center;
+}
+.single-doc p {
+    color: #171c26;
 }
 .single-doc .info {
     font-size: 14px;

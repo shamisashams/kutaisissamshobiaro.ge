@@ -1,12 +1,16 @@
 .aboutPage .showcase {
-    background: url(/img/hero/3.png) no-repeat;
+    background: url(/img/about/bg_2.png) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 72px;
     padding-bottom: 124px;
+    color: rgba(255, 255, 255, 0.863);
+}
+.aboutPage .showcase p {
+    color: rgba(255, 255, 255, 0.863);
 }
 .aboutPage .showcase h4 {
-    color: #1dbfcc;
+    color: #48d8e2;
     font-size: 30px;
     margin-bottom: 20px;
 }

@@ -17,17 +17,17 @@ const Contact = ({ seo }) => {
         {
             icon: <Call color="#1DBFCC" />,
             text: "ტელეფონის ნომერი",
-            info: gphone.value,
+            info: "599 563 872",
         },
         {
             icon: <Mail color="#1DBFCC" />,
             text: "ელექტრონული ფოსტა",
-            info: gemail.value,
+            info: "2_samshobiaro@mail.ru",
         },
         {
             icon: <Location color="#1DBFCC" />,
             text: "მისამართი",
-            info: gaddress.value,
+            info: "ქუთაისი, ლორთქიფანიძის ქუჩა №13",
         },
     ];
 

@@ -25,7 +25,7 @@ const OurDoctors = ({ seo }) => {
         },
         {
             img: "/img/doctors/1.jpg",
-            name: "ლარისა მეტრეველი",
+            name: "ლალი მეტრეველი",
         },
         {
             img: "/img/doctors/nino-metonidze.jpeg",
