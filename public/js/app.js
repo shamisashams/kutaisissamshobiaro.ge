@@ -3959,8 +3959,12 @@ function Layout(_ref) {
   var children = _ref.children,
       _ref$seo = _ref.seo,
       seo = _ref$seo === void 0 ? null : _ref$seo;
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    Aos.init({
+      duration: 2000
+    });
+  }, []); // console.log(seo);
 
-  // console.log(seo);
   if (seo) {
     (0,_SetSeoData__WEBPACK_IMPORTED_MODULE_3__.default)(seo);
   }
