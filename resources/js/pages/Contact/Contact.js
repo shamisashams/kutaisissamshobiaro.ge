@@ -8,9 +8,9 @@ import { Title2 } from "../../components/Titles/Titles";
 import "./Contact.css";
 import Layout from "../../Layouts/Layout";
 import { usePage } from "@inertiajs/inertia-react";
-import {Map} from "@/components/Map/Map";
+import { Map } from "@/components/Map/Map";
 
-const Contact = ({seo}) => {
+const Contact = ({ seo }) => {
     const { errors, gphone, gemail, gaddress } = usePage().props;
 
     const contactInfo = [
@@ -55,7 +55,7 @@ const Contact = ({seo}) => {
         <Layout seo={seo}>
             <div className="contactPage">
                 <PageHead title="კონტაქტი" prev="მთავარი" active="კონტაქტი" />
-                <div className="wrapper main">
+                <div className="wrapper2 main">
                     <div className="map">
                         <Map />
                     </div>

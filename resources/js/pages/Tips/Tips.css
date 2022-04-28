@@ -1,0 +1,162 @@
+.tipsPage .tips_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
+    padding: 60px 0 130px 0;
+}
+.tipsPage .tip_box {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 162px;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+.tipsPage .tip_box h3 {
+    font-size: 20px;
+    position: relative;
+    z-index: 100;
+}
+.tipsPage .tip_box .detail {
+    position: absolute;
+    bottom: 15px;
+    right: 100%;
+    z-index: 100;
+    transition: 0.3s;
+    color: #fff;
+}
+.tipsPage .tip_box:hover .detail {
+    right: 20px;
+}
+.tipsPage .tip_box .detail img {
+    margin-left: 10px;
+}
+.tipsPage .tip_box::before {
+    width: 500px;
+    height: 500px;
+    background-color: #1dbfcc;
+    border-radius: 50%;
+    transition: 0.3s;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0) scale(0);
+    transform-origin: top left;
+}
+.tipsPage .tip_box:hover::before {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.tipsPage .tip_box:hover {
+    color: #fff;
+}
+.singleTip .main {
+    padding: 35px 0 70px 0;
+}
+.singleTip p {
+    margin-bottom: 20px;
+}
+.singleTip h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.singleTip .table {
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 3px 15px #3344561f;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+.singleTip table {
+    border-collapse: collapse;
+}
+.singleTip .main * {
+    font-family: "Helvetica";
+}
+.singleTip .main p {
+    color: #64708a;
+}
+.singleTip .main strong,
+.singleTip .main h3 {
+    color: #283144;
+}
+.singleTip .pad-left {
+    padding-left: 20px;
+}
+.singleTip .table td {
+    border: 1px solid #7781972d;
+    padding: 10px 16px;
+    color: #64708a;
+    font-size: 12px;
+}
+.singleTip table tr:first-child td {
+    border-top: none;
+}
+.singleTip table tr:last-child td {
+    border-bottom: none;
+}
+.singleTip table tr td:first-child {
+    border-left: none;
+}
+.singleTip table tr td:last-child {
+    border-right: none;
+}
+.singleTip ul {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    list-style: disc;
+    color: #64708a;
+}
+.singleTip a {
+    color: rgb(76, 76, 247) !important;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 1300px) {
+    .tipsPage .tips_grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .tipsPage .tips_grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .tipsPage .tip_box h3 {
+        font-size: 16px;
+    }
+    .singleTip .table td {
+        white-space: nowrap;
+    }
+    .singleTip .table {
+        overflow-x: scroll;
+        width: auto;
+    }
+    .singleTip .table::-webkit-scrollbar {
+        height: 5px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .tipsPage .tips_grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 38px 0 9px 0;
+    }
+    .singleTip .table {
+        padding: 12px 14px;
+    }
+    .singleTip h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .singleTip p {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tipsPage .tips_grid {
+        grid-template-columns: 1fr;
+    }
+}

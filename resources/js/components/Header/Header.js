@@ -55,6 +55,10 @@ const Header = () => {
             nav: "კონტაქტი",
             link: route("client.contact.index"),
         },
+        {
+            nav: "რჩევები",
+            link: route("client.tips.index"),
+        },
     ];
     return (
         <div className="header">
@@ -85,7 +89,7 @@ const Header = () => {
                         id="menu_btn"
                         className={mobileMenu ? "clicked" : ""}
                         onClick={() => toggleMobileMenu()}
-                        />
+                    />
                 </div>
             </div>
             <div

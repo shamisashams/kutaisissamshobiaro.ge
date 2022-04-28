@@ -96,6 +96,13 @@ Route::prefix('{locale?}')
             Route::get('/news', [\App\Http\Controllers\Client\NewsController::class, 'index'])->name('client.news.index');
             Route::get('/news/{news}', [\App\Http\Controllers\Client\NewsController::class, 'show'])->name('client.news.show');
             Route::get('/services', [HomeController::class, 'services'])->name('client.services.index');
+            Route::get('/tips', [HomeController::class, 'tips'])->name('client.tips.index');
+
+            // single tips 
+            Route::get('/tip/{n}', [HomeController::class, 'tip'])->name('client.tip.index');
+
+            // single doctor 
+            Route::get('/doctor/{n}', [HomeController::class, 'doctor'])->name('client.doctor.index');
 
             // Contact Page
             Route::get('/contact', [ContactController::class, 'index'])->name('client.contact.index');

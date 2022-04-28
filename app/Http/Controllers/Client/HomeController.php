@@ -103,6 +103,76 @@ class HomeController extends Controller
             'og_description' => $page->meta_og_description
         ]);
     }
+    public function tips()
+    {
+        $page = Page::where('key', 'tips')->firstOrFail();
+
+        return Inertia::render('Tips/Tips', ["seo" => [
+            "title"=>$page->meta_title,
+            "description"=>$page->meta_description,
+            "keywords"=>$page->meta_keyword,
+            "og_title"=>$page->meta_og_title,
+            "og_description"=>$page->meta_og_description,
+//            "image" => "imgg",
+//            "locale" => App::getLocale()
+        ]])->withViewData([
+            'meta_title' => $page->meta_title,
+            'meta_description' => $page->meta_description,
+            'meta_keyword' => $page->meta_keyword,
+            "image" => $page->file,
+            'og_title' => $page->meta_og_title,
+            'og_description' => $page->meta_og_description
+        ]);
+    }
+
+
+    // single tips pages ------------------------------------------
+
+    public function tip($locale,$n)
+    {
+        $page = Page::where('key', 'about')->firstOrFail();
+
+        return Inertia::render('SingleTip/Tip'.$n, ["seo" => [
+            "title"=>$page->meta_title,
+            "description"=>$page->meta_description,
+            "keywords"=>$page->meta_keyword,
+            "og_title"=>$page->meta_og_title,
+            "og_description"=>$page->meta_og_description,
+//            "image" => "imgg",
+//            "locale" => App::getLocale()
+        ]])->withViewData([
+            'meta_title' => $page->meta_title,
+            'meta_description' => $page->meta_description,
+            'meta_keyword' => $page->meta_keyword,
+            "image" => $page->file,
+            'og_title' => $page->meta_og_title,
+            'og_description' => $page->meta_og_description
+        ]);
+    }
+
+    // single doctor pages ------------------------------------------
+
+    public function doctor($locale,$n)
+    {
+        $page = Page::where('key', 'about')->firstOrFail();
+
+        return Inertia::render('OurDoctors/Doctor'.$n, ["seo" => [
+            "title"=>$page->meta_title,
+            "description"=>$page->meta_description,
+            "keywords"=>$page->meta_keyword,
+            "og_title"=>$page->meta_og_title,
+            "og_description"=>$page->meta_og_description,
+//            "image" => "imgg",
+//            "locale" => App::getLocale()
+        ]])->withViewData([
+            'meta_title' => $page->meta_title,
+            'meta_description' => $page->meta_description,
+            'meta_keyword' => $page->meta_keyword,
+            "image" => $page->file,
+            'og_title' => $page->meta_og_title,
+            'og_description' => $page->meta_og_description
+        ]);
+    }
 
 
 
