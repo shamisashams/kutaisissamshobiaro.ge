@@ -102,7 +102,7 @@ const Services = ({ seo }) => {
                 </div>
                 <div className="highlighted">
                     <div className="wrapper2 flex">
-                        <div className="content">
+                        <div className="content" data-aos="fade-right">
                             <h1>სტაციონალური მომსახურება</h1>
                             <div className="checked">
                                 <img
@@ -149,13 +149,22 @@ const Services = ({ seo }) => {
                             <p></p>
                         </div>
                         <div className="img flex">
-                            <img src="/img/icons/service/img1.png" alt="" />
-                            <img src="/img/icons/service/img2.png" alt="" />
+                            <img
+                                ata-aos="flip-left"
+                                src="/img/icons/service/img1.png"
+                                alt=""
+                            />
+                            <img
+                                ata-aos="flip-right"
+                                src="/img/icons/service/img2.png"
+                                alt=""
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="wrapper2 last_flex flex">
                     <img
+                        ata-aos="fade-up"
                         className="img"
                         src="/img/icons/service/img3.png"
                         alt=""

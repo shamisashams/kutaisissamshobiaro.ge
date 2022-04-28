@@ -78,6 +78,7 @@ const OurDoctors = ({ seo }) => {
                                         index + 1
                                     )}
                                     className="item"
+                                    ata-aos="zoom-in"
                                 >
                                     <div className="img">
                                         <img src={doctor.img} alt="" />
