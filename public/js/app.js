@@ -3947,8 +3947,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/Header/Header */ "./resources/js/Components/Header/Header.js");
 /* harmony import */ var _Components_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Footer/Footer */ "./resources/js/Components/Footer/Footer.js");
 /* harmony import */ var _SetSeoData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SetSeoData */ "./resources/js/Layouts/SetSeoData.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
 // import "../Pages/App.css";
  // import ScrollToTop from "../Components/ScrollToTop";
+
+
 
 
 
@@ -3960,7 +3965,7 @@ function Layout(_ref) {
       _ref$seo = _ref.seo,
       seo = _ref$seo === void 0 ? null : _ref$seo;
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    Aos.init({
+    aos__WEBPACK_IMPORTED_MODULE_4___default().init({
       duration: 2000
     });
   }, []); // console.log(seo);

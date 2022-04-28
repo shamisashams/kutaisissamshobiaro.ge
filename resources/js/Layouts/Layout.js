@@ -4,6 +4,8 @@ import React, { useEffect } from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import setSeoData from "./SetSeoData";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // import {Fragment} from "react";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
