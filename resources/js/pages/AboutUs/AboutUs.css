@@ -1,6 +1,6 @@
 .aboutPage .showcase {
     background: url(/img/about/bg_2.png) no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     padding-top: 72px;
     padding-bottom: 124px;
@@ -107,9 +107,6 @@
     .aboutPage .section2 .lft {
         margin-right: 40px;
     }
-    .aboutPage .showcase {
-        background-position-x: -230px;
-    }
     .aboutPage .showcase .content {
         margin-right: 0;
     }
@@ -154,7 +151,6 @@
         justify-content: flex-start;
     }
     .aboutPage .showcase {
-        background-position-x: unset;
         background-position: right;
     }
     .aboutPage .showcase .content {
