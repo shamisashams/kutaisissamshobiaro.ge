@@ -45,7 +45,7 @@ const OurDoctors = ({ seo }) => {
         },
         {
             img: "/img/doctors/khatuna.jpg",
-            name: "ხათუნა ჟეიშვილი ნეონატ",
+            name: "ხათუნა ჭეიშვილი",
         },
     ];
     return (

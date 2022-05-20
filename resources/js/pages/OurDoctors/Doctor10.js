@@ -16,7 +16,7 @@ const Doctor10 = ({ seo }) => {
                     <div className="doc_img img">
                         <img src="/img/doctors/khatuna.jpg" alt="" />
                     </div>
-                    <div className="name">ხათუნა ჟეიშვილი ნეონატ</div>
+                    <div className="name">ხათუნა ჭეიშვილი </div>
                     <p className="info">
                         დავიბადე ქუთაისში 1969 წლის 10 მარტს, სკოლა დავამთავრე
                         1986 წელს ოქროს მედლით, ჩავირიცხე თბილისის სახელმწიფო
