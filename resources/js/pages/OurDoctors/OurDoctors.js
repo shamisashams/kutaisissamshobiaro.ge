@@ -24,7 +24,7 @@ const OurDoctors = ({ seo }) => {
             name: "დავით ჯანელიძე",
         },
         {
-            img: "/img/doctors/1.jpg",
+            img: "/img/doctors/1.png",
             name: "ლალი მეტრეველი",
         },
         {
@@ -46,6 +46,18 @@ const OurDoctors = ({ seo }) => {
         {
             img: "/img/doctors/khatuna.jpg",
             name: "ხათუნა ჭეიშვილი",
+        },
+        {
+            img: "/img/doctors/ketevan.jpg",
+            name: "ქეთევან მერკვილაძე",
+        },
+        {
+            img: "/img/doctors/marina.jpg",
+            name: "მარინა ჯავახაძე ",
+        },
+        {
+            img: "/img/doctors/ana.jpeg",
+            name: "ანა ხუციძე ",
         },
     ];
     return (

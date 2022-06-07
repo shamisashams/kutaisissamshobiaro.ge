@@ -4545,6 +4545,150 @@ var Doctor10 = function Doctor10(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/OurDoctors/Doctor11.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/OurDoctors/Doctor11.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/PageHead/PageHead */ "./resources/js/components/PageHead/PageHead.js");
+/* harmony import */ var _Layouts_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Layouts/Layout */ "./resources/js/Layouts/Layout.js");
+/* harmony import */ var _OurDoctors_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./OurDoctors.css */ "./resources/js/Pages/OurDoctors/OurDoctors.css");
+
+
+
+
+
+var Doctor10 = function Doctor10(_ref) {
+  var seo = _ref.seo;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    seo: seo
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "ourDoctorsPage single-doc"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_1__.PageHead, {
+    title: "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8",
+    prev: "\u10DB\u10D7\u10D0\u10D5\u10D0\u10E0\u10D8",
+    active: "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "wrapper2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "doc_img img"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "/img/doctors/ketevan.jpg",
+    alt: ""
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "name"
+  }, "\u10E5\u10D4\u10D7\u10D4\u10D5\u10D0\u10DC \u10DB\u10D4\u10E0\u10D9\u10D5\u10D8\u10DA\u10D0\u10EB\u10D4 "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "info"
+  }, "1991 \u10EC\u10D4\u10DA\u10E1 \u10D3\u10D0\u10D0\u10DB\u10D7\u10D0\u10D5\u10E0\u10D0 \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8\u10E1 \u10E1\u10D0\u10EE\u10D4\u10DA\u10DB\u10EC\u10D8\u10E4\u10DD \u10E1\u10D0\u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10DD \u10E3\u10DC\u10D8\u10D5\u10D4\u10E0\u10E1\u10D8\u10E2\u10D4\u10E2\u10D8(\u10E0\u10E3\u10E1\u10E3\u10DA\u10D8 \u10E1\u10D4\u10E5\u10E2\u10DD\u10E0\u10D8) \u10E1\u10DE\u10D4\u10EA\u10D8\u10D0\u10DA\u10DD\u10D1\u10D8\u10D7 \u201E\u10E8\u10D8\u10DC\u10D0\u10D2\u10D0\u10DC\u10D8 \u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10D0\u201C 1991-1992 \u10EC.\u10EC  \u10D2\u10D0\u10D8\u10D0\u10E0\u10D0 \u10D8\u10DC\u10E2\u10D4\u10E0\u10DC\u10D0\u10E2\u10E3\u10E0\u10D0 \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10E9\u10EE\u10DD\u10D1\u10D0\u10EB\u10D8\u10E1 \u10E1\u10D0\u10EE.\u10D0\u10D5\u10E2\u10DD\u10E5\u10D0\u10E0\u10EE\u10DC\u10D8\u10E1 \u10E1\u10D0\u10D0\u10D5\u10D0\u10D3\u10DB\u10E7\u10DD\u10E4\u10DD\u10E8\u10D8. 1992 \u10EC\u10D4\u10DA\u10D8\u10D3\u10D0\u10DC  \u10D3\u10D0\u10D8\u10EC\u10E7\u10DD \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10D0 \u10D4\u10E5\u10D8\u10DB-\u10D7\u10D4\u10E0\u10D0\u10DE\u10D4\u10D5\u10E2\u10D0\u10D3 \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10DC\u10D0\u10D6\u10D0\u10E0\u10D8\u10E8\u10D5\u10D8\u10DA\u10D8\u10E1 \u10E1\u10D0\u10DD\u10EF\u10D0\u10EE\u10DD \u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10D8\u10E1 \u10E0\u10D4\u10D2\u10D8\u10DD\u10DC\u10D0\u10DA\u10E3\u10E0 \u10E1\u10D0\u10E1\u10EC\u10D0\u10D5\u10DA\u10DD \u10EA\u10D4\u10DC\u10E2\u10E0\u10E8\u10D8, \u10D3\u10E6\u10D4\u10DB\u10D3\u10D4 \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10E1 \u10DD\u10EF\u10D0\u10EE\u10D8\u10E1 \u10D4\u10E5\u10D8\u10DB\u10D8\u10E1 \u10DE\u10DD\u10D6\u10D8\u10EA\u10D8\u10D0\u10D6\u10D4. 2006 \u10EC\u10D4\u10DA\u10E1 \u10D2\u10D0\u10D8\u10D0\u10E0\u10D0 \u10E1\u10D0\u10DD\u10EF\u10D0\u10EE\u10DD \u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10D8\u10E1 \u10E1\u10E0\u10E3\u10DA\u10D8 \u10D9\u10E3\u10E0\u10E1\u10D8. 2008 \u10EC\u10D4\u10DA\u10E1 \u10DB\u10DD\u10DB\u10D6\u10D0\u10D3\u10D3\u10D0 \u10E1\u10D0\u10DD\u10EF\u10D0\u10EE\u10DD \u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10D8\u10E1 \u10EA\u10D4\u10DC\u10E2\u10E0\u10E8\u10D8 \u10E3\u10EC\u10E7\u10D5\u10D4\u10E2\u10D8 \u10E1\u10D0\u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10DD \u10D2\u10D0\u10DC\u10D0\u10D7\u10DA\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D0\u10E1\u10EC\u10E0\u10D4\u10D1\u10E3\u10DA\u10D8 \u10DE\u10E0\u10DD\u10D2\u10E0\u10D0\u10DB\u10D8\u10D7 \u201E\u10DD\u10EF\u10D0\u10EE\u10D8\u10E1 \u10D4\u10E5\u10D8\u10DB\u10D7\u10D0 \u10DB\u10D0\u10E1\u10EC\u10D0\u10D5\u10DA\u10D4\u10D1\u10DA\u10D4\u10D1\u10D8\u10E1 \u10DB\u10D6\u10D0\u10D3\u10D4\u10D1\u10D8\u10E1 \u10DE\u10E0\u10DD\u10D2\u10E0\u10D0\u10DB\u10D0\u201C 2013 \u10EC\u10DA\u10D8\u10D3\u10D0\u10DC \u10D3\u10E6\u10D4\u10DB\u10D3\u10D4 \u10DE\u10D0\u10E0\u10D0\u10DA\u10D4\u10DA\u10E3\u10E0\u10D0\u10D3 \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10E1 \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10D0\u10EE\u10D0\u10DA N2 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10E1\u10D0\u10EE\u10DA\u10E8\u10D8 \u10D7\u10D4\u10E0\u10D0\u10DE\u10D4\u10D5\u10E2\u10D8\u10E1, \u10DD\u10EF\u10D0\u10EE\u10D8\u10E1 \u10D4\u10E5\u10D8\u10DB\u10D8\u10E1 \u10DE\u10DD\u10D6\u10D8\u10EA\u10D8\u10D0\u10D6\u10D4. \u10DB\u10E3\u10D3\u10DB\u10D8\u10D5\u10D0\u10D3 \u10D8\u10E6\u10D4\u10D1\u10E1 \u10DB\u10DD\u10DC\u10D0\u10EC\u10D8\u10DA\u10D4\u10DD\u10D1\u10D0\u10E1  \u10E1\u10D0\u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10DD \u10D9\u10DD\u10DC\u10E4\u10D4\u10E0\u10D4\u10DC\u10EA\u10D8\u10D4\u10D1\u10E8\u10D8. \u10E1\u10D0\u10D9\u10DD\u10DC\u10E2.\u10E2\u10D4\u10DA\u10D4\u10E4\u10DD\u10DC\u10D8:  595 64 28 91"))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Doctor10);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/OurDoctors/Doctor12.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/OurDoctors/Doctor12.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/PageHead/PageHead */ "./resources/js/components/PageHead/PageHead.js");
+/* harmony import */ var _Layouts_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Layouts/Layout */ "./resources/js/Layouts/Layout.js");
+/* harmony import */ var _OurDoctors_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./OurDoctors.css */ "./resources/js/Pages/OurDoctors/OurDoctors.css");
+
+
+
+
+
+var Doctor10 = function Doctor10(_ref) {
+  var seo = _ref.seo;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    seo: seo
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "ourDoctorsPage single-doc"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_1__.PageHead, {
+    title: "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8",
+    prev: "\u10DB\u10D7\u10D0\u10D5\u10D0\u10E0\u10D8",
+    active: "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "wrapper2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "doc_img img"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "/img/doctors/marina.jpg",
+    alt: ""
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "name"
+  }, "\u10DB\u10D0\u10E0\u10D8\u10DC\u10D0 \u10EF\u10D0\u10D5\u10D0\u10EE\u10D0\u10EB\u10D4 "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "info"
+  }, "1992 \u10EC\u10D4\u10DA\u10E1 \u10D3\u10D0\u10D0\u10DB\u10D7\u10D0\u10D5\u10E0\u10D0 \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8\u10E1 \u10E1\u10D0\u10EE\u10D4\u10DA\u10DB\u10EC\u10D8\u10E4\u10DD \u10E3\u10DC\u10D8\u10D5\u10D4\u10E0\u10E1\u10D8\u10E2\u10D4\u10E2\u10D8 \u10E1\u10D0\u10DB\u10D9\u10E3\u10E0\u10DC\u10D0\u10DA\u10DD \u10E4\u10D0\u10D9\u10E3\u10DA\u10E2\u10D4\u10E2\u10D8 (\u10E0\u10E3\u10E1\u10E3\u10DA\u10D8 \u10E1\u10D4\u10E5\u10E2\u10DD\u10E0\u10D8). 1993-1994 \u10EC.\u10EC \u10D2\u10D0\u10D8\u10D0\u10E0\u10D0 \u10D8\u10DC\u10E2\u10D4\u10E0\u10DC\u10D0\u10E2\u10E3\u10E0\u10D0 \u10E5. \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10E1\u10D0\u10DB\u10EE\u10D0\u10E0\u10D4\u10DD \u10D9\u10DA\u10D8\u10DC\u10D8\u10D9\u10E3\u10E0 \u10E1\u10D0\u10D0\u10D5\u10D0\u10D3\u10DB\u10E7\u10DD\u10E4\u10DD\u10E8\u10D8. 1995-1998 \u10EC.\u10EC \u10D8\u10DB\u10E3\u10E8\u10D0\u10D5\u10D0 \u10D4\u10E5\u10D8\u10DB \u10D7\u10D4\u10E0\u10D0\u10DE\u10D4\u10D5\u10E2\u10D0\u10D3 \u10E5. \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1  \u10E1\u10D0\u10DB\u10EE\u10D0\u10E0\u10D4\u10DD \u10D9\u10DA\u10D8\u10DC\u10D8\u10D9\u10E3\u10E0 \u10E1\u10D0\u10D0\u10D5\u10D0\u10D3\u10DB\u10E7\u10DD\u10E4\u10DD\u10E8\u10D8. 1995-1996 \u10EC.\u10EC \u10D0\u10E1\u10D4\u10D5\u10D4 \u10D2\u10D0\u10D8\u10D0\u10E0\u10D4 \u10E0\u10E3\u10E1\u10D4\u10D7\u10D8\u10E1 \u10DE\u10DD\u10E1\u10E2\u10D3\u10D8\u10DE\u10DA\u10DD\u10DB\u10E3\u10E0\u10D8 \u10D2\u10D0\u10DC\u10D0\u10D7\u10DA\u10D4\u10D1\u10D8\u10E1 \u10D0\u10D9\u10D0\u10D3\u10D4\u10DB\u10D8\u10D8\u10E1 \u10D1\u10D0\u10D6\u10D0\u10D6\u10D4 \u10D9\u10D5\u10D0\u10DA\u10D8\u10E4\u10D8\u10D9\u10D0\u10EA\u10D8\u10D8\u10E1 \u10D0\u10DB\u10D0\u10E6\u10DA\u10D4\u10D1\u10D8\u10E1 \u10D9\u10E3\u10E0\u10E1\u10D4\u10D1\u10D8  \u10D4\u10DA\u10D4\u10E5\u10E2\u10E0\u10DD\u10DE\u10E3\u10DC\u10E5\u10E2\u10E3\u10E0\u10D8\u10E1\u10D0 \u10D3\u10D0 \u10F0\u10DD\u10DB\u10D4\u10DD\u10DE\u10D0\u10D7\u10D8\u10D8\u10E1 \u10E1\u10D0\u10D9\u10D8\u10D7\u10EE\u10D4\u10D1\u10E8\u10D8. 1999-2013 \u10EC.\u10EC \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10D3\u10D0 \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10E0\u10D9\u10D8\u10DC\u10D8\u10D2\u10D6\u10D8\u10E1 \u10E1\u10D0\u10D9\u10D5\u10D0\u10DC\u10EB\u10DD \u10E1\u10D0\u10D0\u10D5\u10D0\u10D3\u10DB\u10E7\u10DD\u10E4\u10DD\u10E8\u10D8. 2013-2014 \u10EC.\u10EC \u10D9\u10DA\u10D8\u10DC\u10D8\u10D9\u10D0 \u201E\u10D1\u10DD\u10DB\u10DD\u10DC\u10D3\u10E8\u10D8\u201C 2015 \u10EC\u10DA\u10D8\u10D3\u10D0\u10DC \u10D3\u10E6\u10D4\u10DB\u10D3\u10D4 \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10E1 \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10D0\u10EE\u10D0\u10DA N2 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10E1\u10D0\u10EE\u10DA\u10E8\u10D8. \u10DE\u10D0\u10E0\u10D0\u10DA\u10D4\u10DA\u10E3\u10E0\u10D0\u10D3 \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10E1 \u10E5\u10D0\u10DA\u10D7\u10D0 \u10EF\u10D0\u10DC\u10DB\u10E0\u10D7\u10D4\u10DA\u10DD\u10D1\u10D8\u10E1 \u10EA\u10D4\u10DC\u10E2\u10E0\u10E8\u10D8 \u201E\u10F0\u10D4\u10E0\u10D0\u201C - \u10DD\u10EF\u10D0\u10EE\u10D8\u10E1 \u10D4\u10E5\u10D8\u10DB\u10D0\u10D3. 2013 \u10EC\u10DA\u10D8\u10D3\u10D0\u10DC \u10E1\u10D4\u10E0\u10D7\u10D8\u10E4\u10D8\u10EA\u10D8\u10E0\u10D4\u10D1\u10E3\u10DA\u10D8 \u10D0\u10E0\u10D8\u10E1 \u10F0\u10DD\u10DB\u10D4\u10DD\u10DE\u10D0\u10D7\u10D8\u10D0\u10E8\u10D8, \u10E8\u10D8\u10DC\u10D0\u10D2\u10D0\u10DC \u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10D0\u10E8\u10D8 \u10E1\u10D0\u10DD\u10EF\u10D0\u10EE\u10DD \u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10D0\u10E8\u10D8. \u10E1\u10D4\u10E0\u10D7\u10D8\u10E4\u10D8\u10EA\u10D8\u10E0\u10D4\u10D1\u10E3\u10DA\u10D8\u10D0: \u10E1\u10D0\u10D4\u10E0\u10D7\u10D0\u10E8\u10DD\u10E0\u10D8\u10E1\u10DD \u10E1\u10D0\u10DB\u10D4\u10EA\u10DC\u10D8\u10D4\u10E0\u10DD \u10E1\u10D8\u10DB\u10DE\u10DD\u10D6\u10D8\u10E3\u10DB\u10D8 \u201E\u10E0\u10DD\u10D2\u10DD\u10E0 \u10D5\u10D0\u10E5\u10EA\u10D8\u10DD\u10D7 \u10E0\u10D7\u10E3\u10DA\u10D8 \u10DB\u10D0\u10E0\u10E2\u10D8\u10D5\u10D0\u10D3: \u10D1\u10D8\u10DD\u10E0\u10D4\u10D2\u10E3\u10DA\u10D0\u10EA\u10D8\u10E3\u10E0\u10D8 \u10D7\u10D4\u10E0\u10D0\u10DE\u10D8\u10D0 \u10DD\u10EF\u10D0\u10EE\u10D8\u10E1 \u10D4\u10E5\u10D8\u10DB\u10D8\u10E1 \u10DE\u10E0\u10D0\u10D9\u10E2\u10D8\u10D9\u10D0\u10E8\u10D8\u201C. \u10DB.\u10DE\u10D4\u10E0\u10D4\u10E1\u10D8 (\u10E8\u10D5\u10D4\u10D8\u10EA\u10D0\u10E0\u10D8\u10D8\u10E1 \u10F0\u10DD\u10DB\u10DD\u10DD\u10DE\u10D0\u10E2\u10D8\u10D8\u10E1 \u10D8\u10DC\u10E1\u10E2\u10D8\u10E2\u10E3\u10E2\u10D8) - \u10D7\u10D4\u10DB\u10D0: \u201E\u10DD\u10E0\u10E1\u10E3\u10DA\u10DD\u10D1\u10D8\u10E1\u10D0 \u10D3\u10D0 \u10DB\u10D4\u10EB\u10E3\u10EB\u10E3\u10E0\u10DD\u10D1\u10D8\u10E1 \u10DE\u10D4\u10E0\u10D8\u10DD\u10D3\u10D8\u10E1 \u10DE\u10E0\u10DD\u10D1\u10DA\u10D4\u10DB\u10D4\u10D1\u10D8\u10E1 \u10DB\u10D9\u10E3\u10E0\u10DC\u10D0\u10DA\u10DD\u10D1\u10D0 \u10F0\u10DD\u10DB\u10D4\u10DD\u10DE\u10D0\u10D7\u10E3\u10E0\u10D8 \u10E1\u10D0\u10E8\u10E3\u10D0\u10DA\u10D4\u10D1\u10D4\u10D1\u10D8\u10D7\u201C \u201E\u10F0\u10DD\u10DB\u10D4\u10DD\u10DE\u10D0\u10D7\u10D8\u10E3\u10E0\u10D8 \u10E1\u10D0\u10E8\u10E3\u10D0\u10DA\u10D4\u10D1\u10D8\u10E1 \u10DE\u10DD\u10DA\u10D8\u10D0\u10E2\u10D8\u10E3\u10E0\u10D8 \u10DB\u10D9\u10E3\u10E0\u10DC\u10D0\u10DA\u10DD\u10D1\u10D0\u201C. \u201E\u10DB\u10EC\u10D5\u10D0\u10D5\u10D4 \u10E0\u10D4\u10E1\u10DE\u10D8\u10E0\u10D0\u10E2\u10DD\u10E0\u10E3\u10DA\u10D8 \u10D3\u10D0\u10D0\u10D5\u10D0\u10D3\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D0 \u10DB\u10D0\u10D7\u10D8 \u10D2\u10D0\u10E0\u10D7\u10E3\u10DA\u10D4\u10D1\u10D8\u10E1 \u10DB\u10D9\u10E3\u10E0\u10DC\u10D0\u10DA\u10DD\u10D1\u10D0 \u10F0\u10DD\u10DB\u10D4\u10DD\u10DE\u10D0\u10D7\u10D8\u10E3\u10E0\u10D8 \u10DE\u10E0\u10D4\u10DE\u10D0\u10E0\u10D0\u10E2\u10D4\u10D1\u10D8\u10D7; \u10D2\u10D0\u10DC\u10E1\u10EE\u10D5\u10D0\u10D5\u10D4\u10D1\u10D0 \u10D1\u10D0\u10D5\u10E8\u10D5\u10D7\u10D0 \u10D3\u10D0 \u10D6\u10E0\u10D3\u10D0\u10E1\u10E0\u10E3\u10DA\u10D7\u10D0 \u10DE\u10E0\u10D0\u10E5\u10E2\u10D8\u10D9\u10D0\u10E8\u10D8\u201C \u10D3\u10D0 \u10D0.\u10E8. \u10E1\u10D0\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10DD \u10E2\u10D4\u10DA\u10D4\u10E4\u10DD\u10DC\u10D8: 593 36-68-53"))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Doctor10);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/OurDoctors/Doctor13.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/OurDoctors/Doctor13.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/PageHead/PageHead */ "./resources/js/components/PageHead/PageHead.js");
+/* harmony import */ var _Layouts_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Layouts/Layout */ "./resources/js/Layouts/Layout.js");
+/* harmony import */ var _OurDoctors_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./OurDoctors.css */ "./resources/js/Pages/OurDoctors/OurDoctors.css");
+
+
+
+
+
+var Doctor10 = function Doctor10(_ref) {
+  var seo = _ref.seo;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    seo: seo
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "ourDoctorsPage single-doc"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_PageHead_PageHead__WEBPACK_IMPORTED_MODULE_1__.PageHead, {
+    title: "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8",
+    prev: "\u10DB\u10D7\u10D0\u10D5\u10D0\u10E0\u10D8",
+    active: "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10D4\u10E5\u10D8\u10DB\u10D4\u10D1\u10D8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "wrapper2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "doc_img img"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "/img/doctors/ana.jpeg",
+    alt: ""
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "name"
+  }, "\u10D0\u10DC\u10D0 \u10EE\u10E3\u10EA\u10D8\u10EB\u10D4  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "info"
+  }, "2003-2009 \u10EC.\u10EC \u10E1\u10EC\u10D0\u10D5\u10DA\u10DD\u10D1\u10D3\u10D0 \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8\u10E1 \u10E1\u10D0\u10EE\u10D4\u10DA\u10DB\u10EC\u10D8\u10E4\u10DD \u10E1\u10D0\u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10DD \u10E3\u10DC\u10D8\u10D5\u10D4\u10E0\u10E1\u10D8\u10E2\u10D4\u10E2\u10E8\u10D8. 2010-2013 \u10EC.\u10EC \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8\u10E1 \u10E1\u10D0\u10EE\u10D4\u10DA\u10DB\u10EC\u10D8\u10E4\u10DD \u10E1\u10D0\u10EE\u10D4\u10DA\u10DB\u10EC\u10D8\u10E4\u10DD \u10E3\u10DC\u10D8\u10D5\u10D4\u10E0\u10E1\u10D8\u10E2\u10D4\u10E2\u10D8\u10E1 \u10E0\u10D4\u10D6\u10D8\u10D3\u10D4\u10DC\u10E2\u10E3\u10E0\u10D8\u10E1 \u10DE\u10E0\u10DD\u10D2\u10E0\u10D0\u10DB\u10D0 \u10E1\u10DE\u10D4\u10EA\u10D8\u10D0\u10DA\u10DD\u10D1\u10D8\u10D7 \u10D4\u10DC\u10D3\u10DD\u10D9\u10E0\u10D8\u10DC\u10DD\u10DA\u10DD\u10D2\u10D8\u10D0. 2014-2016 \u10EC.\u10EC \u10D5. \u10D8\u10D5\u10D4\u10E0\u10D8\u10D4\u10DA\u10D8\u10E1 \u10E1\u10D0\u10EE\u10D4\u10DA\u10DD\u10D1\u10D8\u10E1 \u10D4\u10DC\u10D3\u10DD\u10D9\u10E0\u10D8\u10DC\u10DD\u10DA\u10DD\u10D2\u10D8\u10D0 \u10DB\u10D4\u10E2\u10DD\u10D1\u10DD\u10DA\u10DD\u10D2\u10D8\u10D0, \u10D3\u10D8\u10D4\u10E2\u10DD\u10DA\u10DD\u10D2\u10D8\u10D8\u10E1 \u10EA\u10D4\u10DC\u10E2\u10E0\u10D8 \u201E\u10D4\u10DC \u10DB\u10D4\u10D3\u10D8\u10EA\u201C-\u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8. 2016 \u10EC\u10D4\u10DA\u10E1 \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10D3\u10D0 \u10E5\u10D0\u10E0\u10D7\u10E3\u10DA \u10D2\u10D4\u10E0\u10DB\u10D0\u10DC\u10E3\u10DA\u10D8 \u10D9\u10DA\u10D8\u10DC\u10D8\u10D9\u10D0 \u201E\u10DB\u10D4\u10D3\u10D8\u10D9\u10D0\u10DA \u10F0\u10D0\u10E3\u10E1\u10D8\u201C \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8. 2017 \u10EC\u10D4\u10DA\u10E1 \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10D3\u10D0 \u10EC\u10DB\u10D8\u10DC\u10D3\u10D0 \u10DC\u10D8\u10D9\u10DD\u10DA\u10DD\u10D6\u10D8\u10E1 \u10E1\u10D0\u10EE\u10D4\u10DA\u10DD\u10D1\u10D8\u10E1 \u10E1\u10D0\u10DB\u10D4\u10D3\u10D8\u10EA\u10D8\u10DC\u10DD \u10EA\u10D4\u10DC\u10E2\u10E0\u10D8 -\u10D4\u10D5\u10D4\u10E5\u10E1\u10D8\u10E1 \u10D9\u10DA\u10D8\u10DC\u10D8\u10D9\u10D0. 2018 \u10EC\u10DA\u10D8\u10D3\u10D0\u10DC \u10D3\u10E6\u10D4\u10DB\u10D3\u10D4 \u10DB\u10E3\u10E8\u10D0\u10DD\u10D1\u10E1 \u10E5. \u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10D0\u10EE\u10D0\u10DA N2 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD \u10E1\u10D0\u10EE\u10DA\u10E8\u10D8 \u10D4\u10DC\u10D3\u10DD\u10D9\u10E0\u10D8\u10DC\u10DD\u10DA\u10DD\u10D2\u10D0\u10D3. \u10E1\u10D0\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10DD \u10E2\u10D4\u10DA\u10D4\u10E4\u10DD\u10DC\u10D8: 595-90-73-90"))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Doctor10);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/OurDoctors/Doctor2.js":
 /*!**************************************************!*\
   !*** ./resources/js/Pages/OurDoctors/Doctor2.js ***!
@@ -4968,7 +5112,7 @@ var OurDoctors = function OurDoctors(_ref) {
     img: "/img/doctors/david-j.jpg",
     name: "დავით ჯანელიძე"
   }, {
-    img: "/img/doctors/1.jpg",
+    img: "/img/doctors/1.png",
     name: "ლალი მეტრეველი"
   }, {
     img: "/img/doctors/nino-metonidze.jpeg",
@@ -4985,6 +5129,15 @@ var OurDoctors = function OurDoctors(_ref) {
   }, {
     img: "/img/doctors/khatuna.jpg",
     name: "ხათუნა ჭეიშვილი"
+  }, {
+    img: "/img/doctors/ketevan.jpg",
+    name: "ქეთევან მერკვილაძე"
+  }, {
+    img: "/img/doctors/marina.jpg",
+    name: "მარინა ჯავახაძე "
+  }, {
+    img: "/img/doctors/ana.jpeg",
+    name: "ანა ხუციძე "
   }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     seo: seo
@@ -48354,6 +48507,12 @@ var map = {
 	"./OurDoctors/Doctor1.js": "./resources/js/Pages/OurDoctors/Doctor1.js",
 	"./OurDoctors/Doctor10": "./resources/js/Pages/OurDoctors/Doctor10.js",
 	"./OurDoctors/Doctor10.js": "./resources/js/Pages/OurDoctors/Doctor10.js",
+	"./OurDoctors/Doctor11": "./resources/js/Pages/OurDoctors/Doctor11.js",
+	"./OurDoctors/Doctor11.js": "./resources/js/Pages/OurDoctors/Doctor11.js",
+	"./OurDoctors/Doctor12": "./resources/js/Pages/OurDoctors/Doctor12.js",
+	"./OurDoctors/Doctor12.js": "./resources/js/Pages/OurDoctors/Doctor12.js",
+	"./OurDoctors/Doctor13": "./resources/js/Pages/OurDoctors/Doctor13.js",
+	"./OurDoctors/Doctor13.js": "./resources/js/Pages/OurDoctors/Doctor13.js",
 	"./OurDoctors/Doctor2": "./resources/js/Pages/OurDoctors/Doctor2.js",
 	"./OurDoctors/Doctor2.js": "./resources/js/Pages/OurDoctors/Doctor2.js",
 	"./OurDoctors/Doctor3": "./resources/js/Pages/OurDoctors/Doctor3.js",
