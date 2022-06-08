@@ -13,31 +13,31 @@ const GalleryHome = () => {
     }, []);
     const images = [
         {
-            src: "/img/gallery/1.png",
+            src: "/img/gallery/1.jpeg",
             span: 1,
         },
         {
-            src: "/img/gallery/2.png",
+            src: "/img/gallery/2.jpeg",
             span: 2,
         },
         {
-            src: "/img/gallery/3.png",
+            src: "/img/gallery/3.jpeg",
             span: 1,
         },
         {
-            src: "/img/gallery/4.png",
+            src: "/img/gallery/4.jpeg",
             span: 1,
         },
         {
-            src: "/img/gallery/5.png",
+            src: "/img/gallery/5.jpeg",
             span: 2,
         },
         {
-            src: "/img/gallery/6.png",
+            src: "/img/gallery/6.jpeg",
             span: 1,
         },
         {
-            src: "/img/gallery/7.png",
+            src: "/img/gallery/7.jpeg",
             span: 2,
         },
     ];
@@ -45,7 +45,7 @@ const GalleryHome = () => {
         <div className="GalleryHome wrapper">
             <Title1 largeText="ფოტო გალერეა" />
             <div className="photo_grid" data-aos="fade-up">
-                {images.map((img,index) => {
+                {images.map((img, index) => {
                     return (
                         <div
                             key={index}

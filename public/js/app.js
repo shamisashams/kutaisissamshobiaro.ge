@@ -3887,25 +3887,25 @@ var GalleryHome = function GalleryHome() {
     });
   }, []);
   var images = [{
-    src: "/img/gallery/1.png",
+    src: "/img/gallery/1.jpeg",
     span: 1
   }, {
-    src: "/img/gallery/2.png",
+    src: "/img/gallery/2.jpeg",
     span: 2
   }, {
-    src: "/img/gallery/3.png",
+    src: "/img/gallery/3.jpeg",
     span: 1
   }, {
-    src: "/img/gallery/4.png",
+    src: "/img/gallery/4.jpeg",
     span: 1
   }, {
-    src: "/img/gallery/5.png",
+    src: "/img/gallery/5.jpeg",
     span: 2
   }, {
-    src: "/img/gallery/6.png",
+    src: "/img/gallery/6.jpeg",
     span: 1
   }, {
-    src: "/img/gallery/7.png",
+    src: "/img/gallery/7.jpeg",
     span: 2
   }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
