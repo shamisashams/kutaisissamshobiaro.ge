@@ -10,7 +10,8 @@ import { SocialMedia } from "../SocialMedia/SocialMedia";
 import "./Header.css";
 import { Link, usePage } from "@inertiajs/inertia-react";
 
-const Header = () => {
+const Header = (settings, page, seo) => {
+    console.log(settings);
     const { gphone, gemail, gaddress, pathname } = usePage().props;
 
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -73,15 +74,15 @@ const Header = () => {
                         <div className="contact_info">
                             <Link href="/contact">
                                 <Call color="#fff" />
-                                599 563 872
+                                {gphone.value}
                             </Link>
                             <Link href="/contact">
                                 <Mail color="#fff" />
-                                2_samshobiaro@mail.ru
+                                {gemail.value}
                             </Link>
                             <Link href="/contact">
                                 <Location color="#fff" />
-                                ქუთაისი, ლორთქიფანიძის ქუჩა №13
+                                {gaddress.value}
                             </Link>
                         </div>
                     </div>

@@ -14,7 +14,6 @@ import { Map } from "@/components/Map/Map";
 
 const Footer = () => {
     const { gphone, gemail, gaddress, pathname } = usePage().props;
-    console.log(pathname);
     let hideMap = false;
 
     if (pathname === route("client.contact.index")) {
@@ -91,15 +90,15 @@ const Footer = () => {
                         <h2>საკონტაქტო ინფორმაცია</h2>
                         <Link href="/">
                             <Call color="#171C26" />
-                            599 563 872
+                            {gphone.value}
                         </Link>
                         <Link href="/">
                             <Mail color="#171C26" />
-                            2_samshobiaro@mail.ru
+                            {gemail.value}
                         </Link>
                         <Link href="/">
                             <Location color="#171C26" />
-                            ქუთაისი, ლორთქიფანიძის ქუჩა №13
+                            {gaddress.value}
                         </Link>
                     </div>
                 </div>

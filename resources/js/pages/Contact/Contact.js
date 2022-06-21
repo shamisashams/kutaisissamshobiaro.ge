@@ -10,24 +10,23 @@ import Layout from "../../Layouts/Layout";
 import { usePage } from "@inertiajs/inertia-react";
 import { Map } from "@/components/Map/Map";
 
-const Contact = ({ seo }) => {
+const Contact = ({ seo, settings }) => {
     const { errors, gphone, gemail, gaddress } = usePage().props;
-
     const contactInfo = [
         {
             icon: <Call color="#1DBFCC" />,
             text: "ტელეფონის ნომერი",
-            info: "599 563 872",
+            info: settings[0].value,
         },
         {
             icon: <Mail color="#1DBFCC" />,
             text: "ელექტრონული ფოსტა",
-            info: "2_samshobiaro@mail.ru",
+            info: settings[1].value,
         },
         {
             icon: <Location color="#1DBFCC" />,
             text: "მისამართი",
-            info: "ქუთაისი, ლორთქიფანიძის ქუჩა №13",
+            info: settings[2].value,
         },
     ];
 

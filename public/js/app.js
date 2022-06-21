@@ -2960,7 +2960,6 @@ var Footer = function Footer() {
       gemail = _usePage$props.gemail,
       gaddress = _usePage$props.gaddress,
       pathname = _usePage$props.pathname;
-  console.log(pathname);
   var hideMap = false;
 
   if (pathname === route("client.contact.index")) {
@@ -3031,15 +3030,15 @@ var Footer = function Footer() {
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_3__.Call, {
     color: "#171C26"
-  }), "599 563 872"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }), gphone.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_3__.Mail, {
     color: "#171C26"
-  }), "2_samshobiaro@mail.ru"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }), gemail.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_3__.Location, {
     color: "#171C26"
-  }), "\u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8, \u10DA\u10DD\u10E0\u10D7\u10E5\u10D8\u10E4\u10D0\u10DC\u10D8\u10EB\u10D8\u10E1 \u10E5\u10E3\u10E9\u10D0 \u211613")))));
+  }), gaddress.value)))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
@@ -3081,7 +3080,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var Header = function Header() {
+var Header = function Header(settings, page, seo) {
+  console.log(settings);
   var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.usePage)().props,
       gphone = _usePage$props.gphone,
       gemail = _usePage$props.gemail,
@@ -3155,15 +3155,15 @@ var Header = function Header() {
     href: "/contact"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_1__.Call, {
     color: "#fff"
-  }), "599 563 872"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Link, {
+  }), gphone.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Link, {
     href: "/contact"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_1__.Mail, {
     color: "#fff"
-  }), "2_samshobiaro@mail.ru"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Link, {
+  }), gemail.value), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Link, {
     href: "/contact"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_1__.Location, {
     color: "#fff"
-  }), "\u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8, \u10DA\u10DD\u10E0\u10D7\u10E5\u10D8\u10E4\u10D0\u10DC\u10D8\u10EB\u10D8\u10E1 \u10E5\u10E3\u10E9\u10D0 \u211613"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }), gaddress.value))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     id: "menu_btn",
     className: mobileMenu ? "clicked" : "",
     onClick: function onClick() {
@@ -3521,7 +3521,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var Contact = function Contact(_ref) {
-  var seo = _ref.seo;
+  var seo = _ref.seo,
+      settings = _ref.settings;
   var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_8__.usePage)().props,
       errors = _usePage$props.errors,
       gphone = _usePage$props.gphone,
@@ -3532,19 +3533,19 @@ var Contact = function Contact(_ref) {
       color: "#1DBFCC"
     }),
     text: "ტელეფონის ნომერი",
-    info: "599 563 872"
+    info: settings[0].value
   }, {
     icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__.Mail, {
       color: "#1DBFCC"
     }),
     text: "ელექტრონული ფოსტა",
-    info: "2_samshobiaro@mail.ru"
+    info: settings[1].value
   }, {
     icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_img_icons_contact_contactIcons__WEBPACK_IMPORTED_MODULE_2__.Location, {
       color: "#1DBFCC"
     }),
     text: "მისამართი",
-    info: "ქუთაისი, ლორთქიფანიძის ქუჩა №13"
+    info: settings[2].value
   }];
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({

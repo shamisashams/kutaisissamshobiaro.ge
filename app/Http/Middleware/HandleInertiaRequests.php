@@ -44,16 +44,15 @@ class HandleInertiaRequests extends Middleware
         $trans = new Db();
 
         $this->settings();
-//        $locales = config("translatable.locales");
-//        $currentLocale = App::getLocale();
+        //        $locales = config("translatable.locales");
+        //        $currentLocale = App::getLocale();
         $currentRoute = url()->current();
-
-
         return array_merge(parent::share($request), [
             "translations" => $trans->loadTranslations("ge", "client"),
-//            "locales" => $locales,
-//            "currentLocale" => $currentLocale,
-            "pathname" => $currentRoute
+            //            "locales" => $locales,
+            //            "currentLocale" => $currentLocale,
+            "pathname" => $currentRoute,
+            "settings" => $settings = Setting::query()->with(['translations'])->get(),
         ]);
     }
 
@@ -104,5 +103,4 @@ class HandleInertiaRequests extends Middleware
             "gfacebook" => $gfacebook
         ]);
     }
-
 }
