@@ -15,17 +15,17 @@
                        href="{{locale_route('news.create')}}">
                         <i class="material-icons">add</i>
                     </a>
-                    <h4 class="card-title mt-2">@lang('admin.news')</h4>
+                    <h4 class="card-title mt-2">@lang('სიახლეები')</h4>
                     <div class="row">
                         <div class="col s12">
                             <form class="mr-0 p-0">
                                 <table id="data-table-simple" class="display">
                                     <thead>
                                     <tr>
-                                        <th>@lang('admin.id')</th>
-                                        <th>@lang('admin.status')</th>
-                                        <th>@lang('admin.title')</th>
-                                        <th>@lang('admin.actions')</th>
+                                        <th>@lang('id')</th>
+                                        <th>@lang('status')</th>
+                                        <th>@lang('title')</th>
+                                        <th>@lang('actions')</th>
                                     </tr>
                                     </thead>
                                     <tr>

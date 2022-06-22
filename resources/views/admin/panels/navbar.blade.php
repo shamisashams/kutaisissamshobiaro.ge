@@ -12,7 +12,7 @@
             <span class="flag-icon flag-icon-gb"></span>
           </a>
         </li>
-        <li class="hide-on-med-and-down">
+        {{-- <li class="hide-on-med-and-down">
           <a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);">
             <i class="material-icons">settings_overscan</i>
           </a>
@@ -29,7 +29,7 @@
               <img src="{{asset('images/avatar/avatar-7.png')}}" alt="avatar"><i></i>
             </span>
           </a>
-        </li>
+        </li> --}}
       </ul>
       <!-- translation-button-->
       {{-- წავშალე ენების შეცვლის ბათონი --}}
@@ -52,7 +52,7 @@
         @endif
       </ul> --}}
       <!-- profile-dropdown-->
-      <ul class="dropdown-content" id="profile-dropdown">
+      {{-- <ul class="dropdown-content" id="profile-dropdown"> --}}
         <li>
           <a class="grey-text text-darken-1" href="{{locale_route('logout')}}">
             <i class="material-icons">keyboard_tab</i>

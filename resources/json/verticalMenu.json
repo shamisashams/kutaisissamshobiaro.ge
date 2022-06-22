@@ -9,14 +9,14 @@
         },
         {
             "url": "setting.index",
-            "name": "სეთინგები",
+            "name": "პარამეტრები",
             "i18n": "setting",
             "icon": "language",
             "slug": "setting"
         },
         {
             "url": "page.index",
-            "name": "გვერდი",
+            "name": "გვერდები",
             "i18n": "page",
             "icon": "language",
             "slug": "page"

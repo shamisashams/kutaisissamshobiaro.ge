@@ -2,7 +2,7 @@
 @extends('admin.layout.contentLayoutMaster')
 
 {{-- page title --}}
-@section('title',__('სეთინგები'))
+@section('title',__('პარამეტრები'))
 
 
 @section('content')
@@ -11,17 +11,17 @@
             <div id="button-trigger" class="card card card-default scrollspy">
 
                 <div class="card-content">
-                    <h4 class="card-title mt-2">@lang('admin.setting')</h4>
+                    <h4 class="card-title mt-2">@lang('პარამეტრები')</h4>
                     <div class="row">
                         <div class="col s12">
                             <form class="mr-0 p-0">
                                 <table id="data-table-simple" class="display">
                                     <thead>
                                     <tr>
-                                        <th>@lang('admin.id')</th>
-                                        <th>@lang('admin.key')</th>
-                                        <th>@lang('admin.value')</th>
-                                        <th>@lang('admin.actions')</th>
+                                        <th>@lang('id')</th>
+                                        <th>@lang('key')</th>
+                                        <th>@lang('value')</th>
+                                        <th>@lang('actions')</th>
                                     </tr>
                                     </thead>
                                     <tr>
