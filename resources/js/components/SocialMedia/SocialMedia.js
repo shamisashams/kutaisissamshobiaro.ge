@@ -7,7 +7,7 @@ export const SocialMedia = ({ color }) => {
     return (
         <div className="socialmedia flex centered">
             <a
-                href="https://www.facebook.com/akhaliN2samshobiarosakhlikutaisshi"
+                href={gfacebook.value}
                 target="_blank"
             >
                 <svg

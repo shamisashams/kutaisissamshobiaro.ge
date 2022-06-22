@@ -25,18 +25,18 @@ class SettingSeeder extends Seeder
             [
                 'key' => 'address'
             ],
-            [
-                'key' => 'working_hours'
-            ],
+            // [
+            //     'key' => 'working_hours'
+            // ],
             [
                 'key' => 'facebook'
             ],
-            [
-                'key' => 'instagram'
-            ],
-            [
-                'key' => 'youtube'
-            ]
+            // [
+            //     'key' => 'instagram'
+            // ],
+            // [
+            //     'key' => 'youtube'
+            // ]
 
         ];
 

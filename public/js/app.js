@@ -3086,7 +3086,8 @@ var Header = function Header(settings, page, seo) {
       gphone = _usePage$props.gphone,
       gemail = _usePage$props.gemail,
       gaddress = _usePage$props.gaddress,
-      pathname = _usePage$props.pathname;
+      pathname = _usePage$props.pathname,
+      gfacebook = _usePage$props.gfacebook;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -3213,7 +3214,7 @@ var SocialMedia = function SocialMedia(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "socialmedia flex centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.facebook.com/akhaliN2samshobiarosakhlikutaisshi",
+    href: gfacebook.value,
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",

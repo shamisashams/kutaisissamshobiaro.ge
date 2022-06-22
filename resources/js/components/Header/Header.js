@@ -12,7 +12,7 @@ import { Link, usePage } from "@inertiajs/inertia-react";
 
 const Header = (settings, page, seo) => {
     console.log(settings);
-    const { gphone, gemail, gaddress, pathname } = usePage().props;
+    const { gphone, gemail, gaddress, pathname, gfacebook } = usePage().props;
 
     const [mobileMenu, setMobileMenu] = useState(false);
 
