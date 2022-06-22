@@ -4,7 +4,7 @@
  *
  * Date-Time: 06.08.21
  * Time: 15:07
- * @author Vito Makhatadze <vitomakhatadze@gmail.com>
+ * @author Insite.ge
  */
 namespace App\Models;
 
