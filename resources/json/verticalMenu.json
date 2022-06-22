@@ -1,23 +1,22 @@
 {
     "menu": [
-
         {
             "url": "news.index",
-            "name": "news",
+            "name": "სიახლეები",
             "i18n": "news",
             "icon": "language",
             "slug": "news"
         },
         {
             "url": "setting.index",
-            "name": "setting",
+            "name": "სეთინგები",
             "i18n": "setting",
             "icon": "language",
             "slug": "setting"
         },
         {
             "url": "page.index",
-            "name": "page",
+            "name": "გვერდი",
             "i18n": "page",
             "icon": "language",
             "slug": "page"

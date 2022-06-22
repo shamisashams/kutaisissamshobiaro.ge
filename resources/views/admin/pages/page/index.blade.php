@@ -2,7 +2,7 @@
 @extends('admin.layout.contentLayoutMaster')
 
 {{-- page title --}}
-@section('title',__('admin.page'))
+@section('title',__('გვერდი'))
 
 
 @section('content')

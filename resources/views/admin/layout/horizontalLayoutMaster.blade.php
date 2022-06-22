@@ -29,7 +29,7 @@
           @yield('content')
           {{-- right sidebar  --}}
           @include('pages.sidebar.right-sidebar')
-          
+
           @if($configData["isFabButton"] === true)
             @include('pages.sidebar.fab-menu')
           @endif

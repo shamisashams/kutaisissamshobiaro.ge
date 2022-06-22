@@ -32,7 +32,8 @@
         </li>
       </ul>
       <!-- translation-button-->
-      <ul class="dropdown-content" id="translation-dropdown">
+      {{-- წავშალე ენების შეცვლის ბათონი --}}
+      {{-- <ul class="dropdown-content" id="translation-dropdown">
         <li class="dropdown-item">
           <a class="grey-text text-darken-1" href="" data-language="en">
             <i class="flag-icon flag-icon-{{$localizations['current']['locale']}}"></i>
@@ -49,7 +50,7 @@
             </li>
           @endforeach
         @endif
-      </ul>
+      </ul> --}}
       <!-- profile-dropdown-->
       <ul class="dropdown-content" id="profile-dropdown">
         <li>
